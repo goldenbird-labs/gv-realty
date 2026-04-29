@@ -9,8 +9,8 @@ const reasons = [
   },
   {
     icon: Globe,
-    title: 'Global Reach',
-    desc: 'Access to exclusive off-market listings across 32 markets. Our network of elite brokers surfaces opportunities the public never sees.',
+    title: 'CA & FL Specialists',
+    desc: 'Deep local expertise across California and Florida — from Miami Beach to Beverly Hills. Our network surfaces off-market opportunities the public never sees.',
   },
   {
     icon: Shield,

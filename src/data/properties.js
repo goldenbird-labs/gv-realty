@@ -437,7 +437,7 @@ export const stats = [
   { value: '$48B+', label: 'Total Sales Volume' },
   { value: '2,400+', label: 'Properties Sold' },
   { value: '98%', label: 'Client Satisfaction' },
-  { value: '32', label: 'Markets Worldwide' },
+  { value: 'CA · FL', label: 'Markets Served' },
 ]
 
 export const formatPrice = (price, type) => {

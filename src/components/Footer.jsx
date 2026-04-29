@@ -50,7 +50,7 @@ export default function Footer() {
               <span className="text-[9px] tracking-[0.35em] uppercase text-gold font-medium mt-0.5">Realty Group</span>
             </Link>
             <p className="text-white/40 text-sm leading-relaxed mb-6 max-w-xs">
-              The world's most exceptional properties, curated for discerning buyers, sellers, and investors.
+              California & Florida's premier luxury real estate group — serving buyers, sellers, and investors across both coasts.
             </p>
             <div className="space-y-3 text-sm text-white/40">
               <div className="flex items-center gap-2">
@@ -63,7 +63,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin size={13} className="text-gold" />
-                <span>1 Brickell Ave, Miami FL 33131</span>
+                <span>Miami, FL · Los Angeles, CA</span>
               </div>
             </div>
           </div>

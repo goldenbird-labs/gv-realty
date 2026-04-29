@@ -25,9 +25,9 @@ export default function About() {
               A Different Standard of <em className="font-normal italic text-gold">Excellence</em>
             </h2>
             <div className="space-y-4 text-gray-600 text-base leading-relaxed">
-              <p>Founded in Miami in 2004, G&V Realty was built on a single conviction: that the world's most discerning buyers and sellers deserve more than a transaction — they deserve a relationship.</p>
-              <p>Today, with offices in Miami, New York, Los Angeles, and partnerships across 32 global markets, we have closed over $48 billion in luxury real estate. Yet we remain guided by the same white-glove principles that defined our founding.</p>
-              <p>We were among the first luxury brokerages to integrate AI into the property search experience, allowing clients to describe their ideal home in natural language and instantly surface properties that truly match their lifestyle — not just their checkboxes.</p>
+              <p>Founded in Miami in 2004, G&V Realty was built on a single conviction: that the most discerning buyers and sellers in Florida and California deserve more than a transaction — they deserve a relationship.</p>
+              <p>With offices in Miami and Los Angeles, we serve the full spectrum of luxury real estate across both states — from the sun-drenched beaches of South Florida to the iconic hillside estates of Beverly Hills and Malibu. We have closed over $48 billion in luxury real estate while remaining guided by the same white-glove principles that defined our founding.</p>
+              <p>We were among the first luxury brokerages in California and Florida to integrate AI into the property search experience, allowing clients to describe their ideal home in natural language and instantly surface properties that truly match their lifestyle.</p>
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>

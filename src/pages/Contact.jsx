@@ -48,7 +48,8 @@ export default function Contact() {
               {[
                 { icon: Phone, label: 'Phone', value: '+1 (305) 555-0100' },
                 { icon: Mail, label: 'Email', value: 'hello@gvrealty.com' },
-                { icon: MapPin, label: 'Head Office', value: '1 Brickell Ave, Suite 3800, Miami FL 33131' },
+                { icon: MapPin, label: 'Florida Office', value: 'Miami, FL — serving South Florida' },
+                { icon: MapPin, label: 'California Office', value: 'Los Angeles, CA — serving Beverly Hills, Malibu & beyond' },
                 { icon: Clock, label: 'Office Hours', value: 'Mon–Fri 8am–7pm · Sat 9am–5pm' },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-start gap-4">

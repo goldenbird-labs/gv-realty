@@ -103,7 +103,7 @@ export default function Hero() {
 
         {/* Quick filters */}
         <motion.div {...fadeUp(0.8)} className="flex flex-wrap gap-3 mt-6">
-          {['Miami', 'New York', 'Beverly Hills', 'Aspen', 'Malibu'].map(city => (
+          {['Miami', 'Miami Beach', 'Beverly Hills', 'Malibu', 'Los Angeles'].map(city => (
             <button
               key={city}
               onClick={() => navigate(`/properties?city=${city}`)}
