@@ -29,6 +29,12 @@ const footerLinks = {
     { label: 'Commercial', href: '/properties?type=commercial' },
     { label: 'Featured', href: '/properties?featured=true' },
   ],
+  Services: [
+    { label: 'REOs & Short Sales', href: '/services' },
+    { label: 'HUD Homes', href: '/services' },
+    { label: 'Property Management', href: '/services' },
+    { label: 'Our Partners', href: '/partners' },
+  ],
   Company: [
     { label: 'About Us', href: '/about' },
     { label: 'Our Agents', href: '/about#team' },
@@ -47,9 +53,9 @@ export default function Footer() {
   return (
     <footer className="bg-navy-950 text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 md:col-span-2">
             <Link to="/" className="flex flex-col leading-none mb-6">
               <span className="font-display text-2xl font-semibold tracking-wide">G&V</span>
               <span className="text-[9px] tracking-[0.35em] uppercase text-gold font-medium mt-0.5">Realty Group</span>
@@ -60,17 +66,20 @@ export default function Footer() {
             <div className="space-y-3 text-sm text-white/40">
               <div className="flex items-center gap-2">
                 <Phone size={13} className="text-gold" />
-                <span>+1 (305) 555-0100</span>
+                <span>+1 (562) 659-8722</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={13} className="text-gold" />
-                <span>hello@gvrealty.com</span>
+                <span>REO@HomesGandV.com</span>
               </div>
-              <div className="flex items-center gap-2">
-                <MapPin size={13} className="text-gold" />
-                <span>Miami, FL · Los Angeles, CA</span>
+              <div className="flex items-start gap-2">
+                <MapPin size={13} className="text-gold mt-0.5 shrink-0" />
+                <span>10630 Downey Ave #100B, Downey CA<br />1031 Ives Dairy Rd #228, Miami FL</span>
               </div>
             </div>
+            <p className="text-white/20 text-[10px] mt-4 leading-relaxed">
+              CA BRE #01873038 · FL BRE #BK3351317 · NMLS #310884
+            </p>
           </div>
 
           {/* Links */}
@@ -95,7 +104,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex flex-col sm:flex-row items-center gap-3">
-            <p className="text-white/25 text-xs">© {new Date().getFullYear()} G&V Realty. All rights reserved.</p>
+            <p className="text-white/25 text-xs">© {new Date().getFullYear()} G&V Options & Solutions, Inc. All rights reserved.</p>
             <span className="hidden sm:block text-white/10 text-xs">·</span>
             <p className="text-white/25 text-xs">
               Built & powered by{' '}

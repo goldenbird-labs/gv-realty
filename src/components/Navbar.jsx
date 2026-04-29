@@ -10,6 +10,12 @@ const navLinks = [
     { label: 'For Rent', href: '/properties?type=rent' },
     { label: 'Commercial', href: '/properties?type=commercial' },
   ]},
+  { label: 'Services', href: '/services', children: [
+    { label: 'REOs & Short Sales', href: '/services#reo' },
+    { label: 'HUD & Probate', href: '/services#hud' },
+    { label: 'Property Management', href: '/services#management' },
+    { label: 'Our Partners', href: '/partners' },
+  ]},
   { label: 'About', href: '/about' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },

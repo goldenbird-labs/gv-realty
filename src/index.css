@@ -96,6 +96,24 @@ body {
 }
 .btn-navy:hover { background: var(--navy-700); }
 
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+.btn-outline-white:hover { border-color: var(--gold); color: var(--gold); }
+
 .property-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .property-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.12); }
 

@@ -11,7 +11,7 @@ export default function About() {
         <div className="relative max-w-7xl mx-auto">
           <span className="section-label">Our Story</span>
           <h1 className="font-display text-5xl sm:text-6xl text-white mt-4 max-w-2xl leading-tight">
-            Real Estate Done Right <em className="font-normal italic text-gold">Since 2004</em>
+            Real Estate Done Right <em className="font-normal italic text-gold">Since 2007</em>
           </h1>
         </div>
       </div>
@@ -25,9 +25,9 @@ export default function About() {
               A Different Standard of <em className="font-normal italic text-gold">Excellence</em>
             </h2>
             <div className="space-y-4 text-gray-600 text-base leading-relaxed">
-              <p>Founded in Miami in 2004, G&V Realty was built on a single conviction: that every buyer and seller in Florida and California deserves more than a transaction — they deserve a relationship.</p>
-              <p>With offices in Miami and Los Angeles, we serve buyers and sellers across the full market — residential homes, condos, commercial spaces, and investment properties, from South Florida's coastline to California's most sought-after neighborhoods. We have facilitated over $48 billion in transactions while staying true to the personal, relationship-first approach that defined our founding.</p>
-              <p>We were among the first brokerages in California and Florida to integrate AI into the property search experience, allowing clients to describe exactly what they need in plain language and instantly find properties that match their goals — whether it's a first home, an investment property, or a commercial space.</p>
+              <p>G&V Options & Solutions, Inc. was founded in Southern California in 2007 by Giomar Vasquez, a REO and Short Sale Specialist who built her career from the ground up — starting as a broker assistant at Century 21 in 2002. In 2015, the company expanded to Florida with a second office in Miami, now serving clients across both coasts.</p>
+              <p>We specialize in REOs, Short Sales, Standard Sales, Probates, HUD Homes, and Property Management — with deep expertise in loss mitigation, BPO/BOV services, and investment analysis. Our service area spans five California counties (Los Angeles, Orange, Ventura, San Bernardino, and Riverside) and three Florida counties (Miami-Dade, Broward, and Palm Beach).</p>
+              <p>Our team is multilingual — fluent in English, Spanish, and Portuguese — allowing us to serve a diverse clientele with the same clarity and care regardless of language. We partner closely with trusted vendors in title, escrow, mortgage, and construction to deliver a seamless, end-to-end real estate experience.</p>
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
@@ -38,8 +38,8 @@ export default function About() {
                 className="w-full object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-gold p-6 hidden sm:block">
-                <p className="font-display text-4xl font-semibold text-navy-900">20+</p>
-                <p className="text-xs text-navy-900/70 uppercase tracking-wider mt-1">Years of Excellence</p>
+                <p className="font-display text-4xl font-semibold text-navy-900">17+</p>
+                <p className="text-xs text-navy-900/70 uppercase tracking-wider mt-1">Years in Business</p>
               </div>
             </div>
           </motion.div>
@@ -67,10 +67,10 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Award, title: 'Excellence', desc: 'We hold ourselves to the highest standard in every detail — from how we answer the phone to how we close a deal.' },
-              { icon: Users, title: 'Relationships', desc: 'Our clients are not transactions. Most of our business comes from clients who return to us decade after decade.' },
-              { icon: Globe, title: 'Global Reach', desc: "Our network of elite partners spans 32 markets, giving our clients access to the world's most exclusive off-market opportunities." },
-              { icon: TrendingUp, title: 'Innovation', desc: 'We invest aggressively in technology — from AI search to predictive market analytics — so our clients always have the edge.' },
+              { icon: Award, title: 'Specialization', desc: 'From REOs and Short Sales to HUD Homes and Probates — we handle complex transactions that most agents avoid.' },
+              { icon: Users, title: 'Client-First', desc: 'Our clients are not transactions. We guide every buyer and seller from first conversation to closing day and beyond.' },
+              { icon: Globe, title: 'Multilingual', desc: 'Fluent in English, Spanish, and Portuguese — we serve a diverse clientele across California and Florida with full clarity.' },
+              { icon: TrendingUp, title: 'Full-Service', desc: 'Beyond sales, we offer property management, BPO/BOV, loss mitigation, and investment analysis under one roof.' },
             ].map(({ icon: Icon, title, desc }, i) => (
               <motion.div key={title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
                 className="bg-white p-7 border border-gray-100 hover:border-gold/40 transition-colors group">
@@ -110,10 +110,18 @@ export default function About() {
                     <Mail size={13} /> {agent.email}
                   </a>
                 </div>
-                <div className="flex justify-center gap-6 mt-4 pt-4 border-t border-gray-100 text-xs text-gray-400">
-                  <span><span className="font-semibold text-navy-900">{agent.listingsSold}+</span> sales</span>
-                  <span><span className="font-semibold text-navy-900">${agent.volume}</span> volume</span>
-                </div>
+                {(agent.listingsSold || agent.volume) && (
+                  <div className="flex justify-center gap-6 mt-4 pt-4 border-t border-gray-100 text-xs text-gray-400">
+                    {agent.listingsSold && <span><span className="font-semibold text-navy-900">{agent.listingsSold}+</span> sales</span>}
+                    {agent.volume && <span><span className="font-semibold text-navy-900">${agent.volume}</span> volume</span>}
+                  </div>
+                )}
+                {(agent.licenseCA || agent.licenseFL) && (
+                  <div className="mt-3 pt-3 border-t border-gray-100 text-[10px] text-gray-400 space-y-0.5">
+                    {agent.licenseCA && <p>{agent.licenseCA}</p>}
+                    {agent.licenseFL && <p>{agent.licenseFL}</p>}
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>

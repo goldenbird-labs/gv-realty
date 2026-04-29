@@ -46,11 +46,11 @@ export default function Contact() {
 
             <div className="space-y-6 mb-10">
               {[
-                { icon: Phone, label: 'Phone', value: '+1 (305) 555-0100' },
-                { icon: Mail, label: 'Email', value: 'hello@gvrealty.com' },
-                { icon: MapPin, label: 'Florida Office', value: 'Miami, FL — serving South Florida' },
-                { icon: MapPin, label: 'California Office', value: 'Los Angeles, CA — serving Beverly Hills, Malibu & beyond' },
-                { icon: Clock, label: 'Office Hours', value: 'Mon–Fri 8am–7pm · Sat 9am–5pm' },
+                { icon: Phone, label: 'Office Phone', value: '+1 (562) 659-8722' },
+                { icon: Mail, label: 'Email', value: 'REO@HomesGandV.com' },
+                { icon: MapPin, label: 'California Office', value: '10630 Downey Ave, Suite 100B, Downey CA 90241' },
+                { icon: MapPin, label: 'Florida Office', value: '1031 Ives Dairy Rd, Suite 228, Miami FL 33179' },
+                { icon: Clock, label: 'Office Hours', value: 'Mon–Fri 9am–6pm · Sat 10am–4pm' },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-navy-900 flex items-center justify-center shrink-0">

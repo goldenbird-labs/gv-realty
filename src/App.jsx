@@ -14,6 +14,8 @@ import Terms from './pages/Terms'
 import FairHousing from './pages/FairHousing'
 import Accessibility from './pages/Accessibility'
 import Careers from './pages/Careers'
+import Services from './pages/Services'
+import Partners from './pages/Partners'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -39,6 +41,8 @@ function Layout() {
           <Route path="/fair-housing" element={<FairHousing />} />
           <Route path="/accessibility" element={<Accessibility />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/partners" element={<Partners />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
