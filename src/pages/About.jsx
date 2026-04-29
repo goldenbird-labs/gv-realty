@@ -92,25 +92,27 @@ export default function About() {
             <span className="section-label">The Team</span>
             <h2 className="font-display text-4xl text-navy-900 mt-3">Meet Our <em className="font-normal italic text-gold">Specialists</em></h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-3xl mx-auto">
             {agents.map((agent, i) => (
               <motion.div key={agent.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="text-center group">
-                <div className="relative w-40 h-40 mx-auto mb-5 overflow-hidden">
+                className="text-center group bg-white border border-gray-100 p-10 hover:border-gold/40 hover:shadow-lg transition-all duration-300">
+                <div className="relative w-36 h-36 mx-auto mb-6 overflow-hidden rounded-full border-4 border-cream group-hover:border-gold/30 transition-colors duration-300">
                   <img src={agent.photo} alt={agent.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 border-2 border-transparent group-hover:border-gold transition-colors" />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-navy-900 mb-1">{agent.name}</h3>
-                <p className="text-xs text-gold tracking-wide uppercase mb-3">{agent.title}</p>
-                <p className="text-sm text-gray-500 leading-relaxed mb-5">{agent.bio}</p>
-                <div className="flex items-center justify-center gap-2">
-                  <a href={`tel:${agent.phone}`} className="flex items-center gap-1.5 text-xs text-navy-900 hover:text-gold transition-colors">
-                    <Phone size={12} /> {agent.phone}
+                <h3 className="font-display text-2xl font-semibold text-navy-900 mb-1">{agent.name}</h3>
+                <p className="text-xs text-gold tracking-[0.15em] uppercase mb-4">{agent.title}</p>
+                <p className="text-sm text-gray-500 leading-relaxed mb-6">{agent.bio}</p>
+                <div className="border-t border-gray-100 pt-5 space-y-3">
+                  <a href={`tel:${agent.phone}`} className="flex items-center justify-center gap-2 text-sm font-medium text-navy-900 hover:text-gold transition-colors">
+                    <Phone size={13} /> {agent.phone}
+                  </a>
+                  <a href={`mailto:${agent.email}`} className="flex items-center justify-center gap-2 text-sm text-gray-400 hover:text-gold transition-colors">
+                    <Mail size={13} /> {agent.email}
                   </a>
                 </div>
-                <div className="flex justify-center gap-4 mt-2 text-xs text-gray-500">
-                  <span>{agent.listingsSold}+ sales</span>
-                  <span>${agent.volume} volume</span>
+                <div className="flex justify-center gap-6 mt-4 pt-4 border-t border-gray-100 text-xs text-gray-400">
+                  <span><span className="font-semibold text-navy-900">{agent.listingsSold}+</span> sales</span>
+                  <span><span className="font-semibold text-navy-900">${agent.volume}</span> volume</span>
                 </div>
               </motion.div>
             ))}
