@@ -58,7 +58,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p {...fadeUp(0.5)} className="text-white/60 text-lg max-w-xl mb-12 leading-relaxed">
-          Residential, commercial, and investment properties across California and Florida. Trusted agents. Powered by AI.
+          Residential, commercial, and investment properties across California and Florida. Trusted local agents, real relationships.
         </motion.p>
 
         {/* Search card */}

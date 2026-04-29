@@ -31,9 +31,7 @@ function Message({ msg }) {
   return (
     <div className={`flex items-end gap-2 px-4 py-1.5 ${isUser ? 'flex-row-reverse' : ''}`}>
       {!isUser && (
-        <div className="w-8 h-8 rounded-full bg-navy-900 flex items-center justify-center shrink-0">
-          <Home size={13} className="text-gold" />
-        </div>
+        <img src="/giomar.jpg" alt="Giomar" className="w-8 h-8 rounded-full object-cover shrink-0" />
       )}
       <div
         className={`max-w-[78%] px-4 py-3 text-sm leading-relaxed ${
@@ -112,7 +110,7 @@ export default function ChatWidget() {
       setStreaming('')
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: 'I apologize — something went wrong. Please try again or call us at +1 (305) 555-0100.',
+        content: "Sorry about that, something went wrong on my end. Give me a call at +1 (562) 857-1007 and I'll be happy to help!",
         isError: true,
       }])
     } finally {
@@ -140,14 +138,16 @@ export default function ChatWidget() {
           >
             {/* Header */}
             <div className="flex items-center gap-3 px-5 py-4 border-b border-gray-100 bg-navy-900">
-              <div className="w-9 h-9 rounded-full bg-gold/20 flex items-center justify-center">
-                <Home size={16} className="text-gold" />
-              </div>
+              <img
+                src="/giomar.jpg"
+                className="w-9 h-9 rounded-full object-cover border border-gold/30"
+                alt="Giomar"
+              />
               <div className="flex-1">
-                <p className="font-semibold text-sm text-white">G&V Realty AI Assistant</p>
+                <p className="font-semibold text-sm text-white">Giomar — G&V Realty</p>
                 <div className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  <span className="text-[11px] text-white/50">Online · Ask me anything</span>
+                  <span className="text-[11px] text-white/50">Online · Usually replies instantly</span>
                 </div>
               </div>
               <div className="flex items-center gap-1">
@@ -170,14 +170,17 @@ export default function ChatWidget() {
             <div className="flex-1 overflow-y-auto py-4 bg-white" style={{ scrollbarWidth: 'thin' }}>
               {showWelcome ? (
                 <div className="flex flex-col items-center text-center px-6 pt-4 pb-4">
-                  <div className="w-16 h-16 rounded-full bg-navy-900 flex items-center justify-center mb-4 shadow-lg">
-                    <Home size={28} className="text-gold" />
-                  </div>
-                  <h3 className="font-display text-2xl text-navy-900 mb-2">Find Your Perfect Home</h3>
+                  <img
+                    src="/giomar.jpg"
+                    className="w-16 h-16 rounded-full object-cover border-2 border-gold/30 mb-4 shadow-lg"
+                    alt="Giomar"
+                  />
+                  <h3 className="font-display text-2xl text-navy-900 mb-1">Hi, I'm Giomar 👋</h3>
+                  <p className="text-xs text-gold tracking-wide mb-3">G&V Realty · California & Florida</p>
                   <p className="text-sm text-gray-500 leading-relaxed mb-6">
-                    Describe what you're looking for in plain English — I'll search our entire inventory to find properties that match your lifestyle.
+                    Looking to buy, sell, or rent? Tell me what you have in mind and I'll help you find the right property or answer any questions you have.
                   </p>
-                  <p className="text-[10px] tracking-[0.15em] uppercase text-gold mb-3">Try asking</p>
+                  <p className="text-[10px] tracking-[0.15em] uppercase text-gold mb-3">Quick questions</p>
                   <div className="flex flex-col gap-2 w-full">
                     {SUGGESTIONS.map(s => (
                       <button
@@ -221,7 +224,7 @@ export default function ChatWidget() {
                   <Send size={13} className="text-gold" />
                 </button>
               </div>
-              <p className="text-center text-[10px] text-gray-400 mt-2">Powered by AI · Enter to send</p>
+              <p className="text-center text-[10px] text-gray-400 mt-2">Press Enter to send</p>
             </div>
           </motion.div>
         )}
@@ -258,7 +261,7 @@ export default function ChatWidget() {
           ) : (
             <motion.span key="chat" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }} transition={{ duration: 0.15 }} className="flex items-center gap-2">
               <MessageCircle size={17} />
-              Find a Property
+              Chat with us
             </motion.span>
           )}
         </AnimatePresence>

@@ -4,8 +4,8 @@ import { Brain, Globe, Shield, TrendingUp } from 'lucide-react'
 const reasons = [
   {
     icon: Brain,
-    title: 'AI-Powered Search',
-    desc: 'Describe your dream home in plain English. Our AI searches the entire inventory semantically to surface properties that truly match your lifestyle.',
+    title: 'Smart Property Search',
+    desc: 'Describe what you need in plain English — our smart search finds properties that actually match your goals, not just a list of checkboxes.',
   },
   {
     icon: Globe,
@@ -46,7 +46,7 @@ export default function WhyUs() {
             </p>
             <div className="flex items-center gap-4">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&q=80"
+                src="/victor.jpg"
                 className="w-14 h-14 rounded-full object-cover border-2 border-gold"
                 alt="Victor Guimaraes"
               />
