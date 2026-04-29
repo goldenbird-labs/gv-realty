@@ -89,7 +89,16 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/25 text-xs">© {new Date().getFullYear()} G&V Realty. All rights reserved.</p>
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <p className="text-white/25 text-xs">© {new Date().getFullYear()} G&V Realty. All rights reserved.</p>
+            <span className="hidden sm:block text-white/10 text-xs">·</span>
+            <p className="text-white/25 text-xs">
+              Built & powered by{' '}
+              <a href="https://birdlabs.net" target="_blank" rel="noopener noreferrer" className="text-gold/50 hover:text-gold transition-colors">
+                Bird Labs
+              </a>
+            </p>
+          </div>
           <div className="flex items-center gap-4">
             {[
               { Icon: InstagramIcon, href: '#' },

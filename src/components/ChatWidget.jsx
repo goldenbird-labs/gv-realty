@@ -224,7 +224,10 @@ export default function ChatWidget() {
                   <Send size={13} className="text-gold" />
                 </button>
               </div>
-              <p className="text-center text-[10px] text-gray-400 mt-2">Press Enter to send</p>
+              <p className="text-center text-[10px] text-gray-400 mt-2">
+                Press Enter to send · Built by{' '}
+                <a href="https://birdlabs.net" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Bird Labs</a>
+              </p>
             </div>
           </motion.div>
         )}
