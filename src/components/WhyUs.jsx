@@ -46,13 +46,13 @@ export default function WhyUs() {
             </p>
             <div className="flex items-center gap-4">
               <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&h=64&fit=crop&q=80"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&q=80"
                 className="w-14 h-14 rounded-full object-cover border-2 border-gold"
-                alt="Alexandra Voss"
+                alt="Victor Guimaraes"
               />
               <div>
-                <p className="font-semibold text-navy-900 text-sm">Alexandra Voss</p>
-                <p className="text-xs text-gray-500">Founding Partner, 18 years experience</p>
+                <p className="font-semibold text-navy-900 text-sm">Victor Guimaraes</p>
+                <p className="text-xs text-gray-500">Co-Founder, G&V Realty</p>
               </div>
             </div>
           </motion.div>
