@@ -5,3 +5,9 @@ buildCommand = "npm install && npm run build"
 [deploy]
 startCommand = "node server.js"
 restartPolicyType = "on_failure"
+
+[nixpacks]
+aptPkgs = []
+
+[nixpacks.variables]
+NODE_VERSION = "20"
