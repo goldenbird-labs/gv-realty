@@ -11,7 +11,7 @@ export default function About() {
         <div className="relative max-w-7xl mx-auto">
           <span className="section-label">Our Story</span>
           <h1 className="font-display text-5xl sm:text-6xl text-white mt-4 max-w-2xl leading-tight">
-            Redefining Luxury Real Estate <em className="font-normal italic text-gold">Since 2004</em>
+            Real Estate Done Right <em className="font-normal italic text-gold">Since 2004</em>
           </h1>
         </div>
       </div>
@@ -25,9 +25,9 @@ export default function About() {
               A Different Standard of <em className="font-normal italic text-gold">Excellence</em>
             </h2>
             <div className="space-y-4 text-gray-600 text-base leading-relaxed">
-              <p>Founded in Miami in 2004, G&V Realty was built on a single conviction: that the most discerning buyers and sellers in Florida and California deserve more than a transaction — they deserve a relationship.</p>
-              <p>With offices in Miami and Los Angeles, we serve the full spectrum of luxury real estate across both states — from the sun-drenched beaches of South Florida to the iconic hillside estates of Beverly Hills and Malibu. We have closed over $48 billion in luxury real estate while remaining guided by the same white-glove principles that defined our founding.</p>
-              <p>We were among the first luxury brokerages in California and Florida to integrate AI into the property search experience, allowing clients to describe their ideal home in natural language and instantly surface properties that truly match their lifestyle.</p>
+              <p>Founded in Miami in 2004, G&V Realty was built on a single conviction: that every buyer and seller in Florida and California deserves more than a transaction — they deserve a relationship.</p>
+              <p>With offices in Miami and Los Angeles, we serve buyers and sellers across the full market — residential homes, condos, commercial spaces, and investment properties, from South Florida's coastline to California's most sought-after neighborhoods. We have facilitated over $48 billion in transactions while staying true to the personal, relationship-first approach that defined our founding.</p>
+              <p>We were among the first brokerages in California and Florida to integrate AI into the property search experience, allowing clients to describe exactly what they need in plain language and instantly find properties that match their goals — whether it's a first home, an investment property, or a commercial space.</p>
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>

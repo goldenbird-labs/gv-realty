@@ -50,7 +50,7 @@ export default function Footer() {
               <span className="text-[9px] tracking-[0.35em] uppercase text-gold font-medium mt-0.5">Realty Group</span>
             </Link>
             <p className="text-white/40 text-sm leading-relaxed mb-6 max-w-xs">
-              California & Florida's premier luxury real estate group — serving buyers, sellers, and investors across both coasts.
+              California & Florida real estate — residential, commercial, and investment properties for buyers, sellers, and investors.
             </p>
             <div className="space-y-3 text-sm text-white/40">
               <div className="flex items-center gap-2">

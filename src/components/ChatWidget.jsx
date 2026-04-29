@@ -8,7 +8,7 @@ const SUGGESTIONS = [
   'Show me beachfront homes under $5M',
   'I need a 4-bed family home in Miami',
   'What commercial spaces are available?',
-  'Find me a luxury penthouse to rent',
+  'Find me a penthouse or condo to rent',
 ]
 
 function TypingIndicator() {

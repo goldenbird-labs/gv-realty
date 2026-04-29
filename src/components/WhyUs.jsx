@@ -42,7 +42,7 @@ export default function WhyUs() {
               <em className="font-normal italic text-gold">Real Estate Firm</em>
             </h2>
             <p className="text-gray-500 text-base leading-relaxed mb-8">
-              We combine decades of luxury market expertise with cutting-edge technology to deliver an experience that is truly one of a kind. At G&V Realty, every client is a priority — never a transaction.
+              We combine decades of California and Florida market expertise with cutting-edge technology to deliver an experience that is truly one of a kind. At G&V Realty, every client is a priority — never a transaction.
             </p>
             <div className="flex items-center gap-4">
               <img

@@ -30,7 +30,7 @@ export default function Newsletter() {
             <em className="font-normal italic text-gold">First</em>
           </h2>
           <p className="text-white/50 text-sm mb-8 leading-relaxed">
-            Join 12,000+ discerning investors and homebuyers who receive our curated weekly briefing on the luxury market.
+            Join 12,000+ buyers, sellers, and investors who receive our curated weekly briefing on the California and Florida property market.
           </p>
 
           {submitted ? (

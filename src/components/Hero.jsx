@@ -32,7 +32,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img
           src={BG_IMAGES[imgIdx]}
-          alt="Luxury property"
+          alt="California and Florida real estate"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-950/80 via-navy-900/60 to-navy-950/90" />
@@ -53,12 +53,12 @@ export default function Hero() {
           {...fadeUp(0.35)}
           className="font-display text-[clamp(44px,7vw,88px)] text-white leading-[1.02] mb-6 max-w-4xl"
         >
-          Where Luxury Finds{' '}
-          <em className="font-normal italic text-gold">Its Address</em>
+          The Right Property{' '}
+          <em className="font-normal italic text-gold">For Every Client</em>
         </motion.h1>
 
         <motion.p {...fadeUp(0.5)} className="text-white/60 text-lg max-w-xl mb-12 leading-relaxed">
-          Exclusive access to the world's most exceptional properties. Curated by experts. Powered by AI.
+          Residential, commercial, and investment properties across California and Florida. Trusted agents. Powered by AI.
         </motion.p>
 
         {/* Search card */}
