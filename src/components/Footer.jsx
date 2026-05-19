@@ -66,15 +66,19 @@ export default function Footer() {
             <div className="space-y-3 text-sm text-white/40">
               <div className="flex items-center gap-2">
                 <Phone size={13} className="text-gold" />
-                <span>+1 (562) 659-8722</span>
+                <span>562-857-1007</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={13} className="text-gold" />
-                <span>REO@HomesGandV.com</span>
+                <span>giomar.vasquez@gmail.com</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin size={13} className="text-gold mt-0.5 shrink-0" />
-                <span>10630 Downey Ave #100B, Downey CA<br />1031 Ives Dairy Rd #228, Miami FL</span>
+                <span>
+                  10630 Downey Ave #100B, Downey CA<br />
+                  1031 Ives Dairy Rd #228, Miami FL<br />
+                  627 Cape Coral Pkwy W., Ste 202, Cape Coral FL
+                </span>
               </div>
             </div>
             <p className="text-white/20 text-[10px] mt-4 leading-relaxed">
