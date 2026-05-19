@@ -68,14 +68,14 @@ export default function Contact() {
               <p className="text-[10px] font-semibold tracking-[0.15em] uppercase text-gray-400 mb-4">Speak Directly With</p>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { name: 'Giomar Vasquez', topic: 'About Real Estate', phone: '562-857-1007', email: 'Giomar.Vasquez@gmail.com', photo: '/giomar.jpg' },
-                  { name: 'Victor Astudillo', topic: 'About Mortgage & Loans', phone: '562-857-8686', email: 'loans.gv@gmail.com', photo: '/victor.jpg' },
+                  { name: 'Giomar Vasquez', label: 'Real Estate', phone: '562-857-1007', email: 'Giomar.Vasquez@gmail.com', photo: '/giomar.jpg' },
+                  { name: 'Victor Astudillo', label: 'Mortgage', phone: '562-857-8686', email: 'loans.gv@gmail.com', photo: '/victor.jpg' },
                 ].map(contact => (
-                  <div key={contact.name} className="flex items-start gap-3">
+                  <div key={contact.name} className="flex items-center gap-2">
+                    <span className="text-[9px] font-semibold tracking-[0.2em] uppercase text-gold shrink-0" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>{contact.label}</span>
                     <img src={contact.photo} alt={contact.name} className="w-12 h-12 rounded-full object-cover border-2 border-gray-100 shrink-0" />
                     <div>
                       <p className="text-sm font-semibold text-navy-900">{contact.name}</p>
-                      <p className="text-xs text-gold mb-1">{contact.topic}</p>
                       <a href={`tel:${contact.phone}`} className="block text-xs text-gray-500 hover:text-gold transition-colors">{contact.phone}</a>
                       <a href={`mailto:${contact.email}`} className="block text-xs text-gray-500 hover:text-gold transition-colors">{contact.email}</a>
                     </div>
