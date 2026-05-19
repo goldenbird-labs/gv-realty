@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Heart, ChevronDown } from 'lucide-react'
 import { useStore } from '../store/useStore'
+import gvLogo from '../assets/Gvlogo.png'
 
 const navLinks = [
   { label: 'Properties', href: '/properties', children: [
@@ -51,13 +52,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex flex-col leading-none">
-            <span className="font-display text-xl font-semibold tracking-wide text-white">
-              G&V
-            </span>
-            <span className="text-[9px] tracking-[0.35em] uppercase text-gold font-medium">
-              Realty Group
-            </span>
+          <Link to="/">
+            <img src={gvLogo} alt="G&V Realty Group" className="h-12 w-auto object-contain" style={{ filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.85)) brightness(1.3)' }} />
           </Link>
 
           {/* Desktop nav */}
