@@ -1,5 +1,5 @@
 import Hero from '../components/Hero'
-import FeaturedListings from '../components/FeaturedListings'
+// import FeaturedListings from '../components/FeaturedListings'
 import StatsBar from '../components/StatsBar'
 import WhyUs from '../components/WhyUs'
 import Testimonials from '../components/Testimonials'
@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <StatsBar />
-      <FeaturedListings />
+      {/* <FeaturedListings /> */}
       <WhyUs />
       <Testimonials />
       <BlogPreview />
