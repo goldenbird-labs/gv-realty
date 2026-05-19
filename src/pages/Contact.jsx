@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
-import { agents } from '../data/properties'
+import { Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', interest: '', message: '' })
@@ -46,11 +45,11 @@ export default function Contact() {
 
             <div className="space-y-6 mb-10">
               {[
-                { icon: Phone, label: 'Office Phone', value: '+1 (562) 659-8722' },
-                { icon: Mail, label: 'Email', value: 'REO@HomesGandV.com' },
+                { icon: Phone, label: 'Office Phone', value: '562-857-1007' },
+                { icon: Mail, label: 'Email', value: 'giomar.vasquez@gmail.com' },
                 { icon: MapPin, label: 'California Office', value: '10630 Downey Ave, Suite 100B, Downey CA 90241' },
-                { icon: MapPin, label: 'Florida Office', value: '1031 Ives Dairy Rd, Suite 228, Miami FL 33179' },
-                { icon: Clock, label: 'Office Hours', value: 'Mon–Fri 9am–6pm · Sat 10am–4pm' },
+                { icon: MapPin, label: 'Florida Office — Miami', value: '1031 Ives Dairy Rd, Suite 228, Miami FL 33179' },
+                { icon: MapPin, label: 'Florida Office — Cape Coral', value: '627 Cape Coral Pkwy W., Suite 202, V#221, Cape Coral FL 33914' },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-navy-900 flex items-center justify-center shrink-0">
@@ -64,18 +63,25 @@ export default function Contact() {
               ))}
             </div>
 
-            {/* Agents */}
+            {/* Direct contacts */}
             <div className="border-t border-gray-100 pt-8">
               <p className="text-[10px] font-semibold tracking-[0.15em] uppercase text-gray-400 mb-4">Speak Directly With</p>
-              <div className="space-y-4">
-                {agents.map(a => (
-                  <div key={a.id} className="flex items-center gap-3">
-                    <img src={a.photo} alt={a.name} className="w-10 h-10 rounded-full object-cover" />
+              <div className="space-y-5">
+                {[
+                  { name: 'Giomar Vasquez', topic: 'About Real Estate', phone: '562-857-1007', email: 'Giomar.Vasquez@gmail.com', photo: '/giomar.jpg' },
+                  { name: 'Victor Astudillo', topic: 'About Mortgage & Loans', phone: '562-857-8686', email: 'loans.gv@gmail.com', photo: null },
+                ].map(contact => (
+                  <div key={contact.name} className="flex items-start gap-3">
+                    {contact.photo
+                      ? <img src={contact.photo} alt={contact.name} className="w-10 h-10 rounded-full object-cover shrink-0" />
+                      : <div className="w-10 h-10 rounded-full bg-navy-900 flex items-center justify-center shrink-0 text-gold text-sm font-semibold">{contact.name[0]}</div>
+                    }
                     <div className="flex-1">
-                      <p className="text-sm font-semibold text-navy-900">{a.name}</p>
-                      <p className="text-xs text-gray-400">{a.title}</p>
+                      <p className="text-sm font-semibold text-navy-900">{contact.name}</p>
+                      <p className="text-xs text-gold mb-1">{contact.topic}</p>
+                      <a href={`tel:${contact.phone}`} className="block text-xs text-gray-500 hover:text-gold transition-colors">{contact.phone}</a>
+                      <a href={`mailto:${contact.email}`} className="block text-xs text-gray-500 hover:text-gold transition-colors">{contact.email}</a>
                     </div>
-                    <a href={`tel:${a.phone}`} className="text-xs text-gold hover:text-gold-dark transition-colors font-medium">{a.phone}</a>
                   </div>
                 ))}
               </div>
