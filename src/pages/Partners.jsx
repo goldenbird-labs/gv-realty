@@ -19,17 +19,10 @@ const partners = [
     category: 'Title & Escrow',
     people: [
       {
-        name: 'Tom Armas',
-        role: 'Title Representative',
-        company: 'Steward Title',
-        desc: 'Tom leads our title work at Steward Title, ensuring clean title and smooth closings on every transaction. His experience with REO and short sale titles means he handles even complex chain-of-title issues efficiently.',
-        expertise: ['Title Search & Insurance', 'REO Title Clearance', 'Short Sale Closing', 'Escrow Coordination'],
-      },
-      {
         name: 'Ruth Galvan',
         role: 'Escrow Officer',
         company: 'M Escrow',
-        desc: 'Ruth manages escrow for G&V transactions at M Escrow, keeping closings on track with careful coordination between buyers, sellers, lenders, and agents.',
+        desc: 'Ruth manages escrow for G & V Options & Solutions Inc. transactions at M Escrow, keeping closings on track with careful coordination between buyers, sellers, lenders, and agents.',
         expertise: ['Residential Escrow', 'REO & Probate Escrow', 'Closing Coordination', 'Document Management'],
       },
     ],
@@ -37,13 +30,6 @@ const partners = [
   {
     category: 'Home Services & Contracting',
     people: [
-      {
-        name: 'Santos Davila',
-        role: 'Plumbing & Rooter Services',
-        company: 'All Star Rooter',
-        desc: 'Santos and the All Star Rooter team handle plumbing inspections, repairs, and emergency services for G&V-managed and listed properties. Fast response times and reliable work across Southern California.',
-        expertise: ['Drain Cleaning & Rooter', 'Plumbing Inspections', 'REO Property Prep', 'Emergency Repairs'],
-      },
       {
         name: 'Rodrigo Coba',
         role: 'Architectural & Renovation',
