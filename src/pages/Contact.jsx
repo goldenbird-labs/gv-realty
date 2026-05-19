@@ -66,17 +66,14 @@ export default function Contact() {
             {/* Direct contacts */}
             <div className="border-t border-gray-100 pt-8">
               <p className="text-[10px] font-semibold tracking-[0.15em] uppercase text-gray-400 mb-4">Speak Directly With</p>
-              <div className="space-y-5">
+              <div className="grid grid-cols-2 gap-4">
                 {[
                   { name: 'Giomar Vasquez', topic: 'About Real Estate', phone: '562-857-1007', email: 'Giomar.Vasquez@gmail.com', photo: '/giomar.jpg' },
-                  { name: 'Victor Astudillo', topic: 'About Mortgage & Loans', phone: '562-857-8686', email: 'loans.gv@gmail.com', photo: null },
+                  { name: 'Victor Astudillo', topic: 'About Mortgage & Loans', phone: '562-857-8686', email: 'loans.gv@gmail.com', photo: '/victor.jpg' },
                 ].map(contact => (
-                  <div key={contact.name} className="flex items-start gap-3">
-                    {contact.photo
-                      ? <img src={contact.photo} alt={contact.name} className="w-10 h-10 rounded-full object-cover shrink-0" />
-                      : <div className="w-10 h-10 rounded-full bg-navy-900 flex items-center justify-center shrink-0 text-gold text-sm font-semibold">{contact.name[0]}</div>
-                    }
-                    <div className="flex-1">
+                  <div key={contact.name} className="flex flex-col items-center text-center gap-2">
+                    <img src={contact.photo} alt={contact.name} className="w-14 h-14 rounded-full object-cover border-2 border-gray-100" />
+                    <div>
                       <p className="text-sm font-semibold text-navy-900">{contact.name}</p>
                       <p className="text-xs text-gold mb-1">{contact.topic}</p>
                       <a href={`tel:${contact.phone}`} className="block text-xs text-gray-500 hover:text-gold transition-colors">{contact.phone}</a>
