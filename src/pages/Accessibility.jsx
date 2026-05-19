@@ -11,7 +11,7 @@ export default function Accessibility() {
         <div className="space-y-8 text-gray-600 text-sm leading-relaxed">
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">Our Commitment</h2>
-            <p>G&V Realty is committed to ensuring our website is accessible to all users, including those with disabilities. We strive to meet WCAG 2.1 Level AA accessibility standards and continually work to improve the accessibility of our digital experience.</p>
+            <p>G & V Options & Solutions Inc. is committed to ensuring our website is accessible to all users, including those with disabilities. We strive to meet WCAG 2.1 Level AA accessibility standards and continually work to improve the accessibility of our digital experience.</p>
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">Measures We Take</h2>

@@ -11,11 +11,11 @@ export default function FairHousing() {
         <div className="space-y-8 text-gray-600 text-sm leading-relaxed">
           <div className="bg-cream border-l-4 border-gold p-6">
             <p className="font-semibold text-navy-900 mb-2">Our Commitment</p>
-            <p>G&V Realty is committed to the principles of the Fair Housing Act and Equal Opportunity in housing for all people.</p>
+            <p>G & V Options & Solutions Inc. is committed to the principles of the Fair Housing Act and Equal Opportunity in housing for all people.</p>
           </div>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">Equal Opportunity Housing</h2>
-            <p>G&V Realty fully supports the principles of the Federal Fair Housing Act (Title VIII of the Civil Rights Act of 1968), as amended, which prohibits discrimination in the sale, rental, and financing of housing based on:</p>
+            <p>G & V Options & Solutions Inc. fully supports the principles of the Federal Fair Housing Act (Title VIII of the Civil Rights Act of 1968), as amended, which prohibits discrimination in the sale, rental, and financing of housing based on:</p>
             <ul className="list-disc pl-6 mt-3 space-y-1">
               <li>Race</li>
               <li>Color</li>
@@ -25,7 +25,7 @@ export default function FairHousing() {
               <li>Familial Status</li>
               <li>Disability</li>
             </ul>
-            <p className="mt-4">Additionally, G&V Realty complies with all state and local fair housing laws in California and Florida, which provide additional protections including sexual orientation, gender identity, marital status, age, and source of income.</p>
+            <p className="mt-4">Additionally, G & V Options & Solutions Inc. complies with all state and local fair housing laws in California and Florida, which provide additional protections including sexual orientation, gender identity, marital status, age, and source of income.</p>
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">Our Practice</h2>

@@ -65,7 +65,7 @@ export default function Partners() {
             Our Preferred <em className="font-normal italic text-gold">Partners</em>
           </h1>
           <p className="text-white/40 text-sm mt-4 max-w-xl leading-relaxed">
-            G&V Options & Solutions, Inc. works with a curated network of trusted professionals in lending, title, escrow, and home services. These are the people we call first — and the ones our clients can rely on.
+            G & V Options & Solutions Inc. works with a curated network of trusted professionals in lending, title, escrow, and home services. These are the people we call first — and the ones our clients can rely on.
           </p>
         </div>
       </div>

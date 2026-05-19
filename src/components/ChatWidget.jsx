@@ -144,7 +144,7 @@ export default function ChatWidget() {
                 alt="Giomar"
               />
               <div className="flex-1">
-                <p className="font-semibold text-sm text-white">Giomar — G&V Realty</p>
+                <p className="font-semibold text-sm text-white">Giomar — G & V Options & Solutions Inc.</p>
                 <div className="flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                   <span className="text-[11px] text-white/50">Online · Usually replies instantly</span>
@@ -176,7 +176,7 @@ export default function ChatWidget() {
                     alt="Giomar"
                   />
                   <h3 className="font-display text-2xl text-navy-900 mb-1">Hi, I'm Giomar 👋</h3>
-                  <p className="text-xs text-gold tracking-wide mb-3">G&V Realty · California & Florida</p>
+                  <p className="text-xs text-gold tracking-wide mb-3">G & V Options & Solutions Inc. · California & Florida</p>
                   <p className="text-sm text-gray-500 leading-relaxed mb-6">
                     Looking to buy, sell, or rent? Tell me what you have in mind and I'll help you find the right property or answer any questions you have.
                   </p>

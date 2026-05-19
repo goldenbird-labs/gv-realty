@@ -20,7 +20,7 @@ export default function Privacy() {
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">3. Data Security</h2>
-            <p>We take reasonable precautions to protect your personal information. All data is stored securely and access is restricted to authorized G&V Realty team members only.</p>
+            <p>We take reasonable precautions to protect your personal information. All data is stored securely and access is restricted to authorized G & V Options & Solutions Inc. team members only.</p>
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">4. Cookies</h2>
@@ -36,7 +36,7 @@ export default function Privacy() {
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">7. Contact</h2>
-            <p>For questions about this Privacy Policy, please contact G&V Realty at <a href="mailto:hello@gvrealty.com" className="text-gold hover:underline">hello@gvrealty.com</a> or call <a href="tel:+15628571007" className="text-gold hover:underline">+1 (562) 857-1007</a>.</p>
+            <p>For questions about this Privacy Policy, please contact G & V Options & Solutions Inc. at <a href="mailto:hello@gvrealty.com" className="text-gold hover:underline">hello@gvrealty.com</a> or call <a href="tel:+15628571007" className="text-gold hover:underline">+1 (562) 857-1007</a>.</p>
           </section>
         </div>
       </div>

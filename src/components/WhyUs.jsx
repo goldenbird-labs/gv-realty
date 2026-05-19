@@ -36,13 +36,13 @@ export default function WhyUs() {
             viewport={{ once: true }}
             transition={{ duration: 0.9 }}
           >
-            <span className="section-label">Why G&V Realty</span>
+            <span className="section-label">Why G & V Options & Solutions Inc.</span>
             <h2 className="font-display text-[clamp(32px,5vw,52px)] text-navy-900 mt-4 mb-6 leading-tight">
               A Different Kind of{' '}
               <em className="font-normal italic text-gold">Real Estate Firm</em>
             </h2>
             <p className="text-gray-500 text-base leading-relaxed mb-8">
-              We combine decades of California and Florida market expertise with cutting-edge technology to deliver an experience that is truly one of a kind. At G&V Realty, every client is a priority — never a transaction.
+              We combine decades of California and Florida market expertise with cutting-edge technology to deliver an experience that is truly one of a kind. At G & V Options & Solutions Inc., every client is a priority — never a transaction.
             </p>
             <div className="flex items-center gap-4">
               <img
@@ -52,7 +52,7 @@ export default function WhyUs() {
               />
               <div>
                 <p className="font-semibold text-navy-900 text-sm">Victor Guimaraes</p>
-                <p className="text-xs text-gray-500">Co-Founder, G&V Realty</p>
+                <p className="text-xs text-gray-500">Co-Founder, G & V Options & Solutions Inc.</p>
               </div>
             </div>
           </motion.div>

@@ -57,8 +57,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2 md:col-span-2">
             <Link to="/" className="flex flex-col leading-none mb-6">
-              <span className="font-display text-2xl font-semibold tracking-wide">G&V</span>
-              <span className="text-[9px] tracking-[0.35em] uppercase text-gold font-medium mt-0.5">Realty Group</span>
+              <span className="font-display text-2xl font-semibold tracking-wide">G & V</span>
+              <span className="text-[9px] tracking-[0.35em] uppercase text-gold font-medium mt-0.5">Options & Solutions Inc.</span>
             </Link>
             <p className="text-white/40 text-sm leading-relaxed mb-6 max-w-xs">
               California & Florida real estate — residential, commercial, and investment properties for buyers, sellers, and investors.
@@ -104,7 +104,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex flex-col sm:flex-row items-center gap-3">
-            <p className="text-white/25 text-xs">© {new Date().getFullYear()} G&V Options & Solutions, Inc. All rights reserved.</p>
+            <p className="text-white/25 text-xs">© {new Date().getFullYear()} G & V Options & Solutions Inc. All rights reserved.</p>
             <span className="hidden sm:block text-white/10 text-xs">·</span>
             <p className="text-white/25 text-xs">
               Built & powered by{' '}

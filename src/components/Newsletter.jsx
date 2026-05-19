@@ -36,7 +36,7 @@ export default function Newsletter() {
           {submitted ? (
             <div className="flex items-center justify-center gap-3 text-gold">
               <CheckCircle size={20} />
-              <span className="font-medium">You're on the list. Welcome to G&V Realty.</span>
+              <span className="font-medium">You're on the list. Welcome to G & V Options & Solutions Inc.</span>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">

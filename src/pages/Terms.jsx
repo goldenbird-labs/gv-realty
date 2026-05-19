@@ -12,7 +12,7 @@ export default function Terms() {
         <div className="space-y-8 text-gray-600 text-sm leading-relaxed">
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">1. Acceptance of Terms</h2>
-            <p>By accessing or using the G&V Realty website, you agree to be bound by these Terms of Service. If you do not agree, please do not use our website.</p>
+            <p>By accessing or using the G & V Options & Solutions Inc. website, you agree to be bound by these Terms of Service. If you do not agree, please do not use our website.</p>
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">2. Use of Website</h2>
@@ -20,19 +20,19 @@ export default function Terms() {
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">3. Property Listings</h2>
-            <p>Property listings on this website are provided for informational purposes. While we strive for accuracy, G&V Realty does not guarantee the completeness or accuracy of any listing. All listings are subject to change, sale, or withdrawal without notice. Prospective buyers and renters should independently verify all information.</p>
+            <p>Property listings on this website are provided for informational purposes. While we strive for accuracy, G & V Options & Solutions Inc. does not guarantee the completeness or accuracy of any listing. All listings are subject to change, sale, or withdrawal without notice. Prospective buyers and renters should independently verify all information.</p>
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">4. No Guarantee of Results</h2>
-            <p>G&V Realty makes no representations or warranties regarding the outcome of any real estate transaction. Past performance of sales volume or pricing is not a guarantee of future results.</p>
+            <p>G & V Options & Solutions Inc. makes no representations or warranties regarding the outcome of any real estate transaction. Past performance of sales volume or pricing is not a guarantee of future results.</p>
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">5. Intellectual Property</h2>
-            <p>All content on this website, including text, images, logos, and design, is the property of G&V Realty and may not be reproduced without written permission.</p>
+            <p>All content on this website, including text, images, logos, and design, is the property of G & V Options & Solutions Inc. and may not be reproduced without written permission.</p>
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">6. Limitation of Liability</h2>
-            <p>G&V Realty shall not be liable for any indirect, incidental, or consequential damages arising from your use of this website or reliance on any information provided herein.</p>
+            <p>G & V Options & Solutions Inc. shall not be liable for any indirect, incidental, or consequential damages arising from your use of this website or reliance on any information provided herein.</p>
           </section>
           <section>
             <h2 className="font-display text-2xl text-navy-900 mb-3">7. Governing Law</h2>

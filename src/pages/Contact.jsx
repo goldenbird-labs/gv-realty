@@ -88,7 +88,7 @@ export default function Contact() {
               <div className="bg-cream border border-gray-200 p-12 text-center">
                 <CheckCircle size={48} className="text-gold mx-auto mb-5" />
                 <h3 className="font-display text-3xl text-navy-900 mb-3">Message Sent</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">A G&V Realty specialist will reach out within one business hour. We look forward to speaking with you.</p>
+                <p className="text-gray-500 text-sm leading-relaxed">A G & V Options & Solutions Inc. specialist will reach out within one business hour. We look forward to speaking with you.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6 bg-cream border border-gray-200 p-8">

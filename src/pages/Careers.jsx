@@ -22,7 +22,7 @@ export default function Careers() {
       <div className="bg-navy-900 py-16 px-6 lg:px-10">
         <div className="max-w-4xl mx-auto">
           <span className="section-label">Join Us</span>
-          <h1 className="font-display text-4xl text-white mt-3">Careers at G&V Realty</h1>
+          <h1 className="font-display text-4xl text-white mt-3">Careers at G & V Options & Solutions Inc.</h1>
           <p className="text-white/40 text-sm mt-3 max-w-xl">
             We're a small, client-focused team doing big things across California and Florida. If you're passionate about real estate and love working with people, we'd like to hear from you.
           </p>

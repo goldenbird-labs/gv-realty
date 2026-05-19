@@ -80,7 +80,7 @@ export default function Services() {
             Full-Service Real Estate <em className="font-normal italic text-gold">Expertise</em>
           </h1>
           <p className="text-white/40 text-sm mt-4 max-w-xl leading-relaxed">
-            G&V Options & Solutions, Inc. handles the full spectrum of real estate — from complex distressed sales to standard residential transactions, property management, and investment advisory.
+            G & V Options & Solutions Inc. handles the full spectrum of real estate — from complex distressed sales to standard residential transactions, property management, and investment advisory.
           </p>
           <div className="flex flex-wrap gap-6 mt-8 text-xs text-white/40">
             <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full" />California: LA · Orange · Ventura · San Bernardino · Riverside</span>
