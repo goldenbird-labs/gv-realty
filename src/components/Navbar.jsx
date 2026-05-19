@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Heart, ChevronDown } from 'lucide-react'
-import { useStore } from '../store/useStore'
+import { Menu, X, ChevronDown } from 'lucide-react'
+
 import gvLogo from '../assets/Gvlogo.png'
 
 const navLinks = [
@@ -26,7 +26,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [dropdown, setDropdown] = useState(null)
-  const { saved } = useStore()
   const location = useLocation()
   const isHome = location.pathname === '/'
 
@@ -100,8 +99,8 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Right actions */}
-          <div className="hidden lg:flex items-center gap-4">
+          {/* Right actions — hidden for now */}
+          {/* <div className="hidden lg:flex items-center gap-4">
             <Link to="/saved" className="relative p-2 text-white/70 hover:text-gold transition-colors">
               <Heart size={18} />
               {saved.length > 0 && (
@@ -113,7 +112,7 @@ export default function Navbar() {
             <Link to="/contact" className="btn-gold py-2.5 px-6 text-[10px]">
               List Property
             </Link>
-          </div>
+          </div> */}
 
           {/* Mobile toggle */}
           <button
