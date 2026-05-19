@@ -108,8 +108,18 @@ export default function Hero() {
           <Link to="/contact" className="btn-outline-white px-8 py-4 text-sm">
             Contact Us
           </Link>
-          <a href="tel:5628571007" className="flex items-center gap-2 text-white/60 hover:text-gold transition-colors text-sm">
-            <Phone size={14} /> 562-857-1007
+          <a
+            href="tel:5628571007"
+            className="group flex items-center gap-3 border border-white/20 hover:border-gold/60 bg-white/5 hover:bg-gold/10 backdrop-blur-sm px-5 py-3.5 transition-all duration-300"
+          >
+            <span className="relative flex items-center justify-center w-8 h-8 rounded-full bg-gold/20 group-hover:bg-gold/30 transition-colors shrink-0">
+              <Phone size={14} className="text-gold" />
+              <span className="absolute inset-0 rounded-full bg-gold/20 animate-ping" />
+            </span>
+            <div className="flex flex-col text-left">
+              <span className="text-[9px] tracking-[0.25em] uppercase text-white/40 group-hover:text-gold/60 transition-colors">Call Us</span>
+              <span className="text-sm font-semibold text-white group-hover:text-gold transition-colors tracking-wide">562-857-1007</span>
+            </div>
           </a>
         </motion.div>
 
