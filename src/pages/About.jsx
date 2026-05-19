@@ -46,7 +46,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Stats — hidden (placeholder numbers)
       <section className="bg-navy-900 py-16 px-6 lg:px-10">
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {stats.map((s, i) => (
@@ -57,6 +57,7 @@ export default function About() {
           ))}
         </div>
       </section>
+      */}
 
       {/* Values */}
       <section className="py-24 px-6 lg:px-10 bg-cream">
