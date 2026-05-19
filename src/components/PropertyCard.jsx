@@ -2,13 +2,11 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Bed, Bath, Square, MapPin, Heart } from 'lucide-react'
 import { useStore } from '../store/useStore'
-import { agents, formatPrice } from '../data/properties'
+import { formatPrice } from '../data/properties'
 
 export default function PropertyCard({ property, index = 0 }) {
   const { saved, toggleSaved } = useStore()
   const isSaved = saved.includes(property.id)
-  const agent = agents.find(a => a.id === property.agentId)
-
   const badgeClass = {
     sale: 'badge-sale',
     rent: 'badge-rent',
@@ -96,13 +94,6 @@ export default function PropertyCard({ property, index = 0 }) {
           </div>
         </div>
 
-        {/* Agent */}
-        {agent && (
-          <div className="flex items-center gap-2 mt-4 pt-4 border-t border-gray-100">
-            <img src={agent.photo} alt={agent.name} className="w-7 h-7 rounded-full object-cover" />
-            <span className="text-xs text-gray-500">{agent.name}</span>
-          </div>
-        )}
       </div>
     </motion.div>
   )

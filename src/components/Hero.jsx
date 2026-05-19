@@ -97,18 +97,6 @@ export default function Hero() {
           </form>
         </motion.div>
 
-        {/* Quick city filters */}
-        <motion.div {...fadeUp(0.55)} className="flex flex-wrap justify-center gap-3 mt-5">
-          {['Miami', 'Miami Beach', 'Beverly Hills', 'Malibu', 'Los Angeles'].map(city => (
-            <button
-              key={city}
-              onClick={() => navigate(`/properties?city=${city}`)}
-              className="px-4 py-2 bg-white/10 border border-white/20 text-white/70 text-xs font-medium tracking-wide hover:bg-white/20 hover:text-white transition-all"
-            >
-              {city}
-            </button>
-          ))}
-        </motion.div>
       </div>
 
       {/* Scroll indicator */}
