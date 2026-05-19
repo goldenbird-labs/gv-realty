@@ -51,10 +51,12 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/">
-            <img src={gvLogo} alt="G&V Realty Group" className="h-12 w-auto object-contain" style={{ filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.85)) brightness(1.3)' }} />
-          </Link>
+          {/* Logo — hidden on home page since hero displays it */}
+          {!isHome && (
+            <Link to="/">
+              <img src={gvLogo} alt="G&V Realty Group" className="h-12 w-auto object-contain" style={{ filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.85)) brightness(1.3)' }} />
+            </Link>
+          )}
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-8">
