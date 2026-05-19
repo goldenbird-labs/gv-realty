@@ -72,7 +72,9 @@ export default function Contact() {
                   { name: 'Victor Astudillo', label: 'Mortgage', phone: '562-857-8686', email: 'loans.gv@gmail.com', photo: '/victor.jpg' },
                 ].map(contact => (
                   <div key={contact.name} className="flex items-center gap-2">
-                    <span className="text-[9px] font-semibold tracking-[0.2em] uppercase text-gold shrink-0" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>{contact.label}</span>
+                    <div className="bg-navy-900 rounded-sm px-1.5 py-3 shrink-0 flex items-center justify-center" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
+                      <span className="text-gold text-[8px] font-bold tracking-[0.25em] uppercase">{contact.label}</span>
+                    </div>
                     <img src={contact.photo} alt={contact.name} className="w-12 h-12 rounded-full object-cover border-2 border-gray-100 shrink-0" />
                     <div>
                       <p className="text-sm font-semibold text-navy-900">{contact.name}</p>
