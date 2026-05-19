@@ -101,26 +101,23 @@ export default function Hero() {
         </motion.p>
 
         {/* CTAs */}
-        <motion.div {...fadeUp(0.5)} className="flex flex-col sm:flex-row items-center gap-4 mb-12">
-          <Link to="/properties" className="btn-gold px-8 py-4 text-sm">
+        <motion.div {...fadeUp(0.5)} className="flex flex-col items-center gap-5 mb-12">
+          <Link to="/properties" className="btn-gold px-10 py-4 text-sm">
             Browse Properties <ArrowRight size={15} />
           </Link>
-          <Link to="/contact" className="btn-outline-white px-8 py-4 text-sm">
-            Contact Us
-          </Link>
-          <a
-            href="tel:5628571007"
-            className="group flex items-center gap-3 border border-white/20 hover:border-gold/60 bg-white/5 hover:bg-gold/10 backdrop-blur-sm px-5 py-3.5 transition-all duration-300"
-          >
-            <span className="relative flex items-center justify-center w-8 h-8 rounded-full bg-gold/20 group-hover:bg-gold/30 transition-colors shrink-0">
-              <Phone size={14} className="text-gold" />
-              <span className="absolute inset-0 rounded-full bg-gold/20 animate-ping" />
-            </span>
-            <div className="flex flex-col text-left">
-              <span className="text-[9px] tracking-[0.25em] uppercase text-white/40 group-hover:text-gold/60 transition-colors">Call Us</span>
-              <span className="text-sm font-semibold text-white group-hover:text-gold transition-colors tracking-wide">562-857-1007</span>
-            </div>
-          </a>
+          <div className="flex items-center gap-4 text-sm">
+            <Link to="/contact" className="text-white/60 hover:text-gold transition-colors tracking-wide">
+              Contact Us
+            </Link>
+            <span className="text-white/20">|</span>
+            <a href="tel:5628571007" className="group flex items-center gap-2 text-white/60 hover:text-gold transition-colors">
+              <span className="relative flex items-center justify-center w-6 h-6 rounded-full bg-gold/20 group-hover:bg-gold/30 transition-colors shrink-0">
+                <Phone size={11} className="text-gold" />
+                <span className="absolute inset-0 rounded-full bg-gold/20 animate-ping" />
+              </span>
+              <span className="font-medium tracking-wide">562-857-1007</span>
+            </a>
+          </div>
         </motion.div>
 
         {/* Service pills */}
