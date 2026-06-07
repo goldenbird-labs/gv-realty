@@ -18,6 +18,7 @@ const services = [
     subtitle: 'Loss Mitigation Specialist',
     desc: 'Giomar Vasquez is a certified Short Sale and Loss Mitigation Specialist. We guide sellers through every step — from initial hardship assessment to lender negotiation and final approval — minimizing damage to credit while avoiding foreclosure.',
     bullets: ['Hardship letter preparation', 'Lender negotiation & approval', 'Title and escrow coordination', 'Deficiency waiver pursuit', 'HUD-1 and closing support'],
+    cert: '/cert1.jpeg',
   },
   {
     id: 'hud',
@@ -111,6 +112,12 @@ export default function Services() {
                 </div>
               </div>
               <p className="text-sm text-gray-600 leading-relaxed mb-5">{svc.desc}</p>
+              {svc.cert && (
+                <div className="flex items-center gap-3 mb-5 p-3 bg-gray-50 border border-gray-100 rounded">
+                  <img src={svc.cert} alt="Certification" className="w-14 h-14 object-contain rounded" />
+                  <p className="text-xs text-gray-500 leading-relaxed">Certified Short Sale Experts (CSSE)™ — verified credential held by Giomar Vasquez.</p>
+                </div>
+              )}
               <ul className="space-y-1.5">
                 {svc.bullets.map(b => (
                   <li key={b} className="flex items-start gap-2 text-xs text-gray-500">
