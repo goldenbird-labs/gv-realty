@@ -113,9 +113,9 @@ export default function Services() {
               </div>
               <p className="text-sm text-gray-600 leading-relaxed mb-5">{svc.desc}</p>
               {svc.cert && (
-                <div className="flex items-center gap-3 mb-5 p-3 bg-gray-50 border border-gray-100 rounded">
-                  <img src={svc.cert} alt="Certification" className="w-14 h-14 object-contain rounded" />
-                  <p className="text-xs text-gray-500 leading-relaxed">Certified Short Sale Experts (CSSE)™ — verified credential held by Giomar Vasquez.</p>
+                <div className="float-right ml-5 mb-3 flex flex-col items-center gap-1.5">
+                  <img src={svc.cert} alt="CSSE Certification" className="w-20 h-20 object-contain rounded-lg shadow-md" />
+                  <span className="text-[9px] font-semibold tracking-widest uppercase text-gold text-center">Certified</span>
                 </div>
               )}
               <ul className="space-y-1.5">
