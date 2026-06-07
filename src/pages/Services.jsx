@@ -84,7 +84,7 @@ export default function Services() {
           </p>
           <div className="flex flex-wrap gap-6 mt-8 text-xs text-white/40">
             <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full" />California: LA · Orange · Ventura · San Bernardino · Riverside</span>
-            <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full" />Florida: Miami-Dade · Broward · Palm Beach</span>
+            <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full" />Florida: Miami-Dade · Broward · Palm Beach · Collier · Hebert · Lee</span>
           </div>
         </div>
       </div>
