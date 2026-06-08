@@ -26,7 +26,7 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-gray-600 text-base leading-relaxed">
               <p>G & V Options & Solutions Inc. was founded in Southern California in 2007 by Giomar Vasquez, a REO and Short Sale Specialist who built her career from the ground up — starting as a broker assistant at Century 21 in 2002. In 2015, the company expanded to Florida with a second office in Miami, now serving clients across both coasts.</p>
-              <p>We specialize in REOs, Short Sales, Standard Sales, Probates, HUD Homes, and Property Management — with deep expertise in loss mitigation, BPO/BOV services, and investment analysis. Our service area spans five California counties (Los Angeles, Orange, Ventura, San Bernardino, and Riverside) and three Florida counties (Miami-Dade, Broward, and Palm Beach).</p>
+              <p>We specialize in REOs, Short Sales, Standard Sales, Probates, HUD Homes, and Property Management — with deep expertise in loss mitigation, BPO/BOV services, and investment analysis. Our service area spans five California counties (Los Angeles, Orange, Ventura, San Bernardino, and Riverside) and six Florida counties (Miami-Dade, Broward, Palm Beach, Collier, Hebert, and Lee).</p>
               <p>Our team is multilingual — fluent in English, Spanish, and Portuguese — allowing us to serve a diverse clientele with the same clarity and care regardless of language. We partner closely with trusted vendors in title, escrow, mortgage, and construction to deliver a seamless, end-to-end real estate experience.</p>
             </div>
           </motion.div>
