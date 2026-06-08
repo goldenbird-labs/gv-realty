@@ -38,7 +38,7 @@ export default function About() {
                 className="w-full object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-gold p-6 hidden sm:block">
-                <p className="font-display text-4xl font-semibold text-navy-900">17+</p>
+                <p className="font-display text-4xl font-semibold text-navy-900">20+</p>
                 <p className="text-xs text-navy-900/70 uppercase tracking-wider mt-1">Years in Business</p>
               </div>
             </div>
