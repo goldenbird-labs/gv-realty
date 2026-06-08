@@ -25,7 +25,7 @@ const services = [
     icon: Key,
     title: 'HUD Homes',
     subtitle: 'Government-Owned Properties',
-    desc: 'As approved HUD agents, we assist buyers in purchasing HUD-foreclosed properties at competitive prices. HUD homes can offer significant value, especially for owner-occupants and non-profit buyers in priority bidding periods.',
+    desc: 'As approved HUD agents, we assist buyers in purchasing government foreclosure properties at competitive prices. HUD homes can offer significant value, especially for owner-occupants and non-profit buyers in priority bidding periods.',
     bullets: ['HUD bidding & registration', 'Owner-occupant vs. investor guidance', 'Property condition reports', 'FHA 203(k) loan referrals', 'Closing coordination with HUD'],
   },
   {
