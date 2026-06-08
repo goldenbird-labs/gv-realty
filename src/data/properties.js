@@ -609,9 +609,9 @@ export const agents = [
   {
     id: '2',
     name: 'Victor Guimaraes',
-    title: 'Realtor · CA & FL',
-    email: 'victor@gvrealty.com',
-    phone: '+1 (562) 857-1007',
+    title: 'Mortgage and Loan Originator',
+    email: 'loans.gv@gmail.com',
+    phone: '+1 (562) 857-8686',
     photo: '/victor.jpg',
     bio: 'Victor is a dedicated realtor with G & V Options & Solutions Inc., serving buyers, sellers, and investors across California and Florida. With deep local market knowledge and a commitment to results, Victor guides clients through every stage of the real estate process with professionalism and care.',
     listingsSold: 180,
