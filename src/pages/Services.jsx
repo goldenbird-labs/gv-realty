@@ -33,7 +33,7 @@ const services = [
     icon: FileText,
     title: 'Probate Sales',
     subtitle: 'Estate & Inherited Properties',
-    desc: 'We work with executors, administrators, and attorneys to handle the sale of inherited and probate properties. Our experience with court-confirmed sales ensures compliance and a smooth process for all parties.',
+    desc: 'We work with executors, administrators, and attorneys to handle the sale of inherited and probate properties, if they need court or not court approval. Our experience with court-confirmed sales ensures compliance and a smooth process for all parties.',
     bullets: ['Executor & administrator support', 'Court-confirmation process', 'Estate property valuations', 'Coordination with probate attorneys', 'Sensitive handling of occupied estates'],
   },
   {
