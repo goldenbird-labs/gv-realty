@@ -33,7 +33,7 @@ export default function About() {
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&h=500&fit=crop&q=85"
+                src="/about-image.jpg"
                 alt="G&V Realty office"
                 className="w-full object-cover"
               />
