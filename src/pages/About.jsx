@@ -11,7 +11,7 @@ export default function About() {
         <div className="relative max-w-7xl mx-auto">
           <span className="section-label">Our Story</span>
           <h1 className="font-display text-5xl sm:text-6xl text-white mt-4 max-w-2xl leading-tight">
-            Real Estate Done Right <em className="font-normal italic text-gold">Since 2007</em>
+            Real Estate Done Right <em className="font-normal italic text-gold">Since 2002</em>
           </h1>
         </div>
       </div>
