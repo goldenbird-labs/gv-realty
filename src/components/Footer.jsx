@@ -82,7 +82,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-white/20 text-[10px] mt-4 leading-relaxed">
-              CA BRE #01873038 · FL BRE #BK3351317 · NMLS #310884
+              CA BRE #01500295 · FL BRE #BK3351317 · NMLS #310884
             </p>
           </div>
 
