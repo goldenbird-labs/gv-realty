@@ -1,147 +1,145 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ChevronDown, ArrowRight, Phone } from 'lucide-react'
+import { ArrowRight, Phone, MapPin, Star } from 'lucide-react'
 import gvLogo from '../assets/Gvlogo.png'
 
 const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 30 },
+  initial: { opacity: 0, y: 24 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] },
+  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
 })
 
-const BG_IMAGES = [
-  'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1800&h=1000&fit=crop&q=90',
-  'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1800&h=1000&fit=crop&q=90',
-  'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1800&h=1000&fit=crop&q=90',
+const fadeIn = (delay = 0) => ({
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 0.9, delay },
+})
+
+const STATS = [
+  { value: '20+', label: 'Years Experience' },
+  { value: '2', label: 'States' },
+  { value: '6', label: 'FL Counties' },
+  { value: '5', label: 'CA Counties' },
 ]
 
-const SERVICES = [
-  'REO & Short Sales',
-  'HUD Homes',
-  'Property Management',
-  'Probate Sales',
-  'Investment Advisory',
-]
+const SERVICES = ['REO & Short Sales', 'HUD Homes', 'Property Management', 'Probate Sales', 'Investment Advisory']
 
 export default function Hero() {
-  const [imgIdx] = useState(0)
-
-  /* ── Search (hidden, preserved for later use) ──────────────────
-  const navigate = useNavigate()
-  const [tab, setTab] = useState('sale')
-  const [query, setQuery] = useState('')
-
-  const handleSearch = (e) => {
-    e.preventDefault()
-    navigate(`/properties?type=${tab}&query=${encodeURIComponent(query)}`)
-  }
-
-  <motion.div {...fadeUp(0.4)} className="w-full max-w-2xl bg-white/10 backdrop-blur-md border border-white/20">
-    <div className="flex border-b border-white/10 px-4 pt-3">
-      {['sale', 'rent', 'commercial'].map(t => (
-        <button key={t} onClick={() => setTab(t)}
-          className={`mr-6 pb-3 text-xs font-semibold tracking-[0.12em] uppercase transition-colors border-b-2 -mb-px ${
-            tab === t ? 'text-gold border-gold' : 'text-white/50 border-transparent hover:text-white/80'}`}>
-          {t === 'sale' ? 'For Sale' : t === 'rent' ? 'For Rent' : 'Commercial'}
-        </button>
-      ))}
-    </div>
-    <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-3 p-3">
-      <div className="flex-1 flex items-center gap-3 bg-white/10 border border-white/20 px-4 py-3">
-        <MapPin size={16} className="text-gold shrink-0" />
-        <input type="text" value={query} onChange={e => setQuery(e.target.value)}
-          placeholder="City, neighborhood, address, or describe your ideal home…"
-          className="flex-1 bg-transparent text-white placeholder-white/40 text-sm outline-none" />
-      </div>
-      <button type="submit" className="btn-gold px-8 py-3 shrink-0 justify-center">
-        <Search size={15} /><span>Search</span>
-      </button>
-    </form>
-  </motion.div>
-  ── End Search ─────────────────────────────────────────────── */
-
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <img
-          src={BG_IMAGES[imgIdx]}
-          alt="California and Florida real estate"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-950/85 via-navy-900/75 to-navy-950/90" />
-      </div>
+    <section className="relative min-h-screen flex overflow-hidden bg-navy-950">
 
-      {/* Ambient gold glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gold/5 rounded-full blur-[140px] pointer-events-none" />
-
-      <div className="relative w-full flex flex-col items-center text-center px-6 pt-24 pb-20">
+      {/* ── LEFT PANEL ── */}
+      <div className="relative z-10 flex flex-col justify-center w-full lg:w-[52%] px-8 sm:px-12 lg:px-16 xl:px-20 pt-28 pb-16">
 
         {/* Logo */}
-        <motion.div {...fadeUp(0.1)} className="mb-5 bg-white/80 backdrop-blur-sm rounded-2xl px-10 py-5 shadow-xl">
-          <img src={gvLogo} alt="G & V Options & Solutions Inc." className="h-28 w-auto object-contain" />
+        <motion.div {...fadeUp(0.1)} className="mb-10">
+          <img src={gvLogo} alt="G & V Options & Solutions Inc." className="h-20 w-auto object-contain" />
         </motion.div>
 
-        {/* Tagline */}
-        <motion.p {...fadeUp(0.2)} className="text-gold/80 text-[10px] tracking-[0.4em] uppercase mb-6">
-          California &amp; Florida Real Estate
-        </motion.p>
+        {/* Location tag */}
+        <motion.div {...fadeUp(0.2)} className="flex items-center gap-2 mb-5">
+          <span className="w-8 h-px bg-gold" />
+          <span className="text-gold text-[10px] font-semibold tracking-[0.3em] uppercase">California &amp; Florida Real Estate</span>
+        </motion.div>
 
         {/* Headline */}
-        <motion.h1 {...fadeUp(0.3)} className="font-display text-[clamp(36px,5.5vw,72px)] text-white leading-[1.05] mb-4 max-w-3xl">
-          The Right Property{' '}
+        <motion.h1 {...fadeUp(0.3)} className="font-display text-[clamp(38px,4.5vw,66px)] text-white leading-[1.06] mb-6">
+          The Right Property<br />
           <em className="font-normal italic text-gold">For Every Client</em>
         </motion.h1>
 
         {/* Subtitle */}
-        <motion.p {...fadeUp(0.4)} className="text-white/50 text-base max-w-xl mb-10 leading-relaxed">
+        <motion.p {...fadeUp(0.4)} className="text-white/55 text-[15px] leading-relaxed max-w-md mb-10">
           Residential, commercial, and investment properties across California and Florida.
-          Trusted local agents, real relationships.
+          Trusted local agents with 20+ years of real relationships.
         </motion.p>
 
         {/* CTAs */}
-        <motion.div {...fadeUp(0.5)} className="flex flex-col items-center gap-5 mb-12">
-          <Link to="/properties" className="btn-gold px-10 py-4 text-sm">
+        <motion.div {...fadeUp(0.5)} className="flex flex-wrap items-center gap-4 mb-12">
+          <Link to="/properties" className="btn-gold px-8 py-3.5 text-sm">
             Browse Properties <ArrowRight size={15} />
           </Link>
-          <div className="flex items-center gap-4 text-sm">
-            <Link to="/contact" className="text-white/60 hover:text-gold transition-colors tracking-wide">
-              Contact Us
-            </Link>
-            <span className="text-white/20">|</span>
-            <a href="tel:5628571007" className="group flex items-center gap-2 text-white/60 hover:text-gold transition-colors">
-              <span className="relative flex items-center justify-center w-6 h-6 rounded-full bg-gold/20 group-hover:bg-gold/30 transition-colors shrink-0">
-                <Phone size={11} className="text-gold" />
-                <span className="absolute inset-0 rounded-full bg-gold/20 animate-ping" />
-              </span>
-              <span className="font-medium tracking-wide">562-857-1007</span>
-            </a>
-          </div>
+          <a href="tel:5628571007" className="flex items-center gap-2.5 text-white/60 hover:text-gold transition-colors group">
+            <span className="flex items-center justify-center w-9 h-9 rounded-full border border-gold/30 group-hover:border-gold/60 transition-colors">
+              <Phone size={14} className="text-gold" />
+            </span>
+            <span className="text-sm font-medium tracking-wide">562-857-1007</span>
+          </a>
         </motion.div>
 
-        {/* Service pills */}
-        <motion.div {...fadeUp(0.6)} className="flex flex-wrap justify-center gap-2">
+        {/* Stats */}
+        <motion.div {...fadeUp(0.6)} className="grid grid-cols-4 gap-0 border border-white/10 divide-x divide-white/10 mb-12">
+          {STATS.map(({ value, label }) => (
+            <div key={label} className="flex flex-col items-center py-5 px-2 text-center">
+              <span className="font-display text-2xl text-gold font-semibold">{value}</span>
+              <span className="text-[10px] text-white/40 tracking-wide uppercase mt-1 leading-tight">{label}</span>
+            </div>
+          ))}
+        </motion.div>
+
+        {/* Service tags */}
+        <motion.div {...fadeUp(0.7)} className="flex flex-wrap gap-2">
           {SERVICES.map(s => (
-            <span key={s} className="px-4 py-1.5 bg-white/8 border border-white/15 text-white/50 text-[10px] font-medium tracking-[0.12em] uppercase backdrop-blur-sm">
+            <span key={s} className="px-3 py-1.5 border border-white/10 text-white/40 text-[10px] font-medium tracking-[0.1em] uppercase hover:border-gold/30 hover:text-gold/60 transition-colors cursor-default">
               {s}
             </span>
           ))}
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* ── RIGHT PANEL — property image ── */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40"
+        {...fadeIn(0.2)}
+        className="hidden lg:block absolute right-0 top-0 w-[52%] h-full"
       >
-        <span className="text-[9px] tracking-[0.3em] uppercase">Explore</span>
-        <motion.div animate={{ y: [0, 6, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
-          <ChevronDown size={16} className="text-gold" />
+        {/* Main image */}
+        <img
+          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&h=1000&fit=crop&q=90"
+          alt="Luxury property"
+          className="w-full h-full object-cover"
+        />
+
+        {/* Subtle left fade so image blends into dark panel */}
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-navy-950/30" />
+
+        {/* Floating property card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.6 }}
+          className="absolute bottom-12 right-10 bg-white/95 backdrop-blur-sm p-5 w-64 shadow-2xl"
+        >
+          <div className="flex items-start justify-between mb-2">
+            <div>
+              <p className="font-display text-navy-900 text-base font-semibold">Featured Listing</p>
+              <div className="flex items-center gap-1 mt-0.5">
+                <MapPin size={11} className="text-gold" />
+                <span className="text-[11px] text-gray-500">California &amp; Florida</span>
+              </div>
+            </div>
+            <span className="text-[10px] font-bold bg-gold text-navy-900 px-2 py-1">FOR SALE</span>
+          </div>
+          <div className="flex items-center gap-1 mt-3 pt-3 border-t border-gray-100">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} size={10} className="text-gold fill-gold" />
+            ))}
+            <span className="text-[11px] text-gray-400 ml-1">Premium Properties</span>
+          </div>
+        </motion.div>
+
+        {/* Top badge */}
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1, duration: 0.6 }}
+          className="absolute top-32 right-10 bg-navy-900/90 backdrop-blur-sm border border-gold/20 px-4 py-3"
+        >
+          <p className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase">Certified Expert</p>
+          <p className="text-white text-sm font-medium mt-0.5">Short Sale Specialist</p>
         </motion.div>
       </motion.div>
+
     </section>
   )
 }
