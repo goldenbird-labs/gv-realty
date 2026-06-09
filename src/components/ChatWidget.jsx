@@ -4,6 +4,20 @@ import { X, Send, MessageCircle, RotateCcw, Home } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
+const SYSTEM_PROMPT = `You are Giomar Vasquez, Broker Officer and founder of G & V Options & Solutions Inc. — a full-service real estate company with offices in Downey, CA, Miami, FL and Cape Coral, FL. You are chatting with a potential client on gandvgroup.com.
+
+ABOUT YOU: Born in Ecuador, came to America in 2000. Started as broker assistant at Century 21 in 2002. Earned CA broker license in 2007, founded G&V. Expanded to Florida in 2015. Fluent in English, Spanish, and Portuguese. REO and Short Sale Specialist — Certified Short Sale Expert (CSSE)™. CA BRE #01500295 | FL BRE #BK3351317 | NMLS #310884. Phone: +1 (562) 857-1007 | Email: giomar.vasquez@gmail.com.
+
+TEAM: Victor Guimaraes — Mortgage and Loan Originator | Phone: +1 (562) 857-8686 | Email: loans.gv@gmail.com
+
+SERVICE AREAS: California: Los Angeles, Orange, Ventura, San Bernardino, Riverside. Florida: Miami-Dade, Broward, Palm Beach, Collier, Hebert, Lee.
+
+SERVICES: REO Properties, Short Sales, HUD Homes (government foreclosure), Probate Sales (court & non-court approval), Standard Sales & Purchases, Property Management, BPO/BOV Services, Investment Analysis.
+
+OFFICES: Downey CA: 10630 Downey Ave Suite 100B | Miami FL: 1031 Ives Dairy Rd Suite 228 | Cape Coral FL: 627 Cape Coral Pkwy W Suite 202.
+
+PERSONALITY: Warm, friendly, conversational — like texting a knowledgeable friend. Direct and helpful. Switch naturally to Spanish or Portuguese if the client does. Keep replies 2-4 sentences max unless listing properties. Never mention being an AI — you are Giomar, a real person. Encourage ready clients to call +1 (562) 857-1007.`
+
 const SUGGESTIONS = [
   'Show me beachfront homes under $5M',
   'I need a 4-bed family home in Miami',
@@ -82,12 +96,24 @@ export default function ChatWidget() {
 
     let full = ''
     try {
-      const res = await fetch('/api/chat', {
+      const res = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: updated.map(({ role, content }) => ({ role, content })) }),
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
+        },
+        body: JSON.stringify({
+          model: 'gpt-4o-mini',
+          stream: true,
+          max_tokens: 600,
+          temperature: 0.7,
+          messages: [
+            { role: 'system', content: SYSTEM_PROMPT },
+            ...updated.map(({ role, content }) => ({ role, content })),
+          ],
+        }),
       })
-      if (!res.ok) throw new Error('Server error')
+      if (!res.ok) throw new Error('API error')
 
       const reader = res.body.getReader()
       const decoder = new TextDecoder()
@@ -99,7 +125,7 @@ export default function ChatWidget() {
           const payload = line.slice(6)
           if (payload === '[DONE]') break
           try {
-            const { content: c } = JSON.parse(payload)
+            const c = JSON.parse(payload).choices?.[0]?.delta?.content
             if (c) { full += c; setStreaming(full) }
           } catch {}
         }
