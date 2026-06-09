@@ -26,7 +26,7 @@ const SERVICES = ['REO & Short Sales', 'HUD Homes', 'Property Management', 'Prob
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex overflow-hidden bg-navy-950">
+    <section className="relative min-h-screen flex overflow-hidden bg-white">
 
       {/* ── LEFT PANEL ── */}
       <div className="relative z-10 flex flex-col justify-center w-full lg:w-[52%] px-8 sm:px-12 lg:px-16 xl:px-20 pt-28 pb-16">
@@ -43,13 +43,13 @@ export default function Hero() {
         </motion.div>
 
         {/* Headline */}
-        <motion.h1 {...fadeUp(0.3)} className="font-display text-[clamp(38px,4.5vw,66px)] text-white leading-[1.06] mb-6">
+        <motion.h1 {...fadeUp(0.3)} className="font-display text-[clamp(38px,4.5vw,66px)] text-navy-900 leading-[1.06] mb-6">
           The Right Property<br />
           <em className="font-normal italic text-gold">For Every Client</em>
         </motion.h1>
 
         {/* Subtitle */}
-        <motion.p {...fadeUp(0.4)} className="text-white/55 text-[15px] leading-relaxed max-w-md mb-10">
+        <motion.p {...fadeUp(0.4)} className="text-gray-500 text-[15px] leading-relaxed max-w-md mb-10">
           Residential, commercial, and investment properties across California and Florida.
           Trusted local agents with 20+ years of real relationships.
         </motion.p>
@@ -59,8 +59,8 @@ export default function Hero() {
           <Link to="/properties" className="btn-gold px-8 py-3.5 text-sm">
             Browse Properties <ArrowRight size={15} />
           </Link>
-          <a href="tel:5628571007" className="flex items-center gap-2.5 text-white/60 hover:text-gold transition-colors group">
-            <span className="flex items-center justify-center w-9 h-9 rounded-full border border-gold/30 group-hover:border-gold/60 transition-colors">
+          <a href="tel:5628571007" className="flex items-center gap-2.5 text-navy-900/60 hover:text-gold transition-colors group">
+            <span className="flex items-center justify-center w-9 h-9 rounded-full border border-gold/40 group-hover:border-gold transition-colors">
               <Phone size={14} className="text-gold" />
             </span>
             <span className="text-sm font-medium tracking-wide">562-857-1007</span>
@@ -68,11 +68,11 @@ export default function Hero() {
         </motion.div>
 
         {/* Stats */}
-        <motion.div {...fadeUp(0.6)} className="grid grid-cols-4 gap-0 border border-white/10 divide-x divide-white/10 mb-12">
+        <motion.div {...fadeUp(0.6)} className="grid grid-cols-4 gap-0 border border-gray-200 divide-x divide-gray-200 mb-12">
           {STATS.map(({ value, label }) => (
             <div key={label} className="flex flex-col items-center py-5 px-2 text-center">
               <span className="font-display text-2xl text-gold font-semibold">{value}</span>
-              <span className="text-[10px] text-white/40 tracking-wide uppercase mt-1 leading-tight">{label}</span>
+              <span className="text-[10px] text-gray-400 tracking-wide uppercase mt-1 leading-tight">{label}</span>
             </div>
           ))}
         </motion.div>
@@ -80,7 +80,7 @@ export default function Hero() {
         {/* Service tags */}
         <motion.div {...fadeUp(0.7)} className="flex flex-wrap gap-2">
           {SERVICES.map(s => (
-            <span key={s} className="px-3 py-1.5 border border-white/10 text-white/40 text-[10px] font-medium tracking-[0.1em] uppercase hover:border-gold/30 hover:text-gold/60 transition-colors cursor-default">
+            <span key={s} className="px-3 py-1.5 border border-gray-200 text-gray-400 text-[10px] font-medium tracking-[0.1em] uppercase hover:border-gold/50 hover:text-gold/70 transition-colors cursor-default">
               {s}
             </span>
           ))}
