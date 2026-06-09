@@ -44,17 +44,6 @@ export default function WhyUs() {
             <p className="text-gray-500 text-base leading-relaxed mb-8">
               We combine decades of California and Florida market expertise with cutting-edge technology to deliver an experience that is truly one of a kind. At G & V Options & Solutions Inc., every client is a priority — never a transaction.
             </p>
-            <div className="flex items-center gap-4">
-              <img
-                src="/victor.jpg"
-                className="w-14 h-14 rounded-full object-cover border-2 border-gold"
-                alt="Victor Guimaraes"
-              />
-              <div>
-                <p className="font-semibold text-navy-900 text-sm">Victor Guimaraes</p>
-                <p className="text-xs text-gray-500">Co-Founder, G & V Options & Solutions Inc.</p>
-              </div>
-            </div>
           </motion.div>
 
           {/* Right: feature grid */}
