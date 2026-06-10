@@ -6,7 +6,7 @@ const MLS_TABS = [
   {
     id: 'crmls-idx',
     label: 'Southern California',
-    sublabel: 'CRMLS IDX',
+    sublabel: 'CRMLS',
     url: 'https://www.crmls.org/servlet/lDisplayListings?LA=EN',
   },
   {
