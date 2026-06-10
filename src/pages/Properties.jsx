@@ -5,27 +5,21 @@ import { ExternalLink } from 'lucide-react'
 const MLS_TABS = [
   {
     id: 'crmls-idx',
-    label: 'California CRMLS',
-    sublabel: 'IDX Search',
-    url: 'https://matrix.crmls.org/Matrix/public/IDX.aspx?idx=36773283',
-  },
-  {
-    id: 'ca-mls',
-    label: 'California MLS',
-    sublabel: 'MLS Client',
-    url: 'https://mls-client.com/D0E1B786',
+    label: 'Southern California',
+    sublabel: 'CRMLS IDX',
+    url: 'https://www.crmls.org/servlet/lDisplayListings?LA=EN',
   },
   {
     id: 'fl-beaches',
-    label: 'Florida Beaches',
-    sublabel: 'MLS Search',
-    url: 'https://mls-client.com/2345DF58',
+    label: 'South Florida East',
+    sublabel: 'Beaches MLS',
+    url: 'https://matrix.beachesmls.com/Matrix/public/IDX.aspx?idx=1709af',
   },
   {
     id: 'fl-gulf',
-    label: 'Florida Gulf Coast',
-    sublabel: 'MLS Search',
-    url: 'https://mls-client.com/A6E61DC56',
+    label: 'South Florida West',
+    sublabel: 'Gulf Coast MLS',
+    url: 'https://fgc.mlsmatrix.com/Matrix/public/IDX.aspx?idx=94741ce6',
   },
 ]
 
