@@ -93,36 +93,40 @@ export default function About() {
             <span className="section-label">The Team</span>
             <h2 className="font-display text-4xl text-navy-900 mt-3">Meet Our <em className="font-normal italic text-gold">Specialists</em></h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-3xl mx-auto">
+          <div className="max-w-5xl mx-auto space-y-10">
             {agents.map((agent, i) => (
               <motion.div key={agent.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="text-center group bg-white border border-gray-100 p-10 hover:border-gold/40 hover:shadow-lg transition-all duration-300">
-                <div className="relative w-36 h-36 mx-auto mb-6 overflow-hidden rounded-full border-4 border-cream group-hover:border-gold/30 transition-colors duration-300">
-                  <img src={agent.photo} alt={agent.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <h3 className="font-display text-2xl font-semibold text-navy-900 mb-1">{agent.name}</h3>
-                <p className="text-xs text-gold tracking-[0.15em] uppercase mb-4">{agent.title}</p>
-                <p className="text-sm text-gray-500 leading-relaxed mb-6 whitespace-pre-line">{agent.bio}</p>
-                <div className="border-t border-gray-100 pt-5 space-y-3">
-                  <a href={`tel:${agent.phone}`} className="flex items-center justify-center gap-2 text-sm font-medium text-navy-900 hover:text-gold transition-colors">
-                    <Phone size={13} /> {agent.phone}
-                  </a>
-                  <a href={`mailto:${agent.email}`} className="flex items-center justify-center gap-2 text-sm text-gray-400 hover:text-gold transition-colors">
-                    <Mail size={13} /> {agent.email}
-                  </a>
-                </div>
-                {(agent.listingsSold || agent.volume) && (
-                  <div className="flex justify-center gap-6 mt-4 pt-4 border-t border-gray-100 text-xs text-gray-400">
-                    {agent.listingsSold && <span><span className="font-semibold text-navy-900">{agent.listingsSold}+</span> sales</span>}
-                    {agent.volume && <span><span className="font-semibold text-navy-900">${agent.volume}</span> volume</span>}
+                className="group bg-white border border-gray-100 p-8 sm:p-12 hover:border-gold/40 hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row gap-10 md:gap-14">
+                <div className="flex flex-col items-center text-center md:w-60 shrink-0">
+                  <div className="relative w-40 h-40 mb-5 overflow-hidden rounded-full border-4 border-cream group-hover:border-gold/30 transition-colors duration-300">
+                    <img src={agent.photo} alt={agent.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
-                )}
-                {(agent.licenseCA || agent.licenseFL) && (
-                  <div className="mt-3 pt-3 border-t border-gray-100 text-[10px] text-gray-400 space-y-0.5">
-                    {agent.licenseCA && <p>{agent.licenseCA}</p>}
-                    {agent.licenseFL && <p>{agent.licenseFL}</p>}
+                  <h3 className="font-display text-2xl font-semibold text-navy-900 mb-1">{agent.name}</h3>
+                  <p className="text-xs text-gold tracking-[0.15em] uppercase mb-5">{agent.title}</p>
+                  <div className="space-y-3">
+                    <a href={`tel:${agent.phone}`} className="flex items-center justify-center gap-2 text-sm font-medium text-navy-900 hover:text-gold transition-colors">
+                      <Phone size={13} /> {agent.phone}
+                    </a>
+                    <a href={`mailto:${agent.email}`} className="flex items-center justify-center gap-2 text-sm text-gray-400 hover:text-gold transition-colors">
+                      <Mail size={13} /> {agent.email}
+                    </a>
                   </div>
-                )}
+                  {(agent.listingsSold || agent.volume) && (
+                    <div className="flex justify-center gap-6 mt-5 pt-5 border-t border-gray-100 text-xs text-gray-400 w-full">
+                      {agent.listingsSold && <span><span className="font-semibold text-navy-900">{agent.listingsSold}+</span> sales</span>}
+                      {agent.volume && <span><span className="font-semibold text-navy-900">${agent.volume}</span> volume</span>}
+                    </div>
+                  )}
+                  {(agent.licenseCA || agent.licenseFL) && (
+                    <div className="mt-3 pt-3 border-t border-gray-100 text-[10px] text-gray-400 space-y-0.5 w-full">
+                      {agent.licenseCA && <p>{agent.licenseCA}</p>}
+                      {agent.licenseFL && <p>{agent.licenseFL}</p>}
+                    </div>
+                  )}
+                </div>
+                <div className="flex-1 pt-8 md:pt-0 border-t border-gray-100 md:border-t-0 md:border-l md:pl-14">
+                  <p className="text-base text-left text-gray-500 leading-relaxed whitespace-pre-line">{agent.bio}</p>
+                </div>
               </motion.div>
             ))}
           </div>
