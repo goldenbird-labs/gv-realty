@@ -73,7 +73,7 @@ export default function Properties() {
           className="flex-1 flex flex-col"
         >
           {/* Open in new tab fallback link */}
-          <div className="flex items-center justify-end gap-2 px-6 py-2 bg-gray-50 border-b border-gray-100">
+          <div className="hidden lg:flex items-center justify-end gap-2 px-6 py-2 bg-gray-50 border-b border-gray-100">
             <span className="text-xs text-gray-400">Powered by live MLS data</span>
             <a
               href={current.url}
@@ -85,14 +85,34 @@ export default function Properties() {
             </a>
           </div>
 
+          {/* Desktop: embedded IDX search */}
           <iframe
             key={activeTab}
             src={current.url}
             title={current.label}
-            className="w-full flex-1 border-0"
+            className="hidden lg:block w-full flex-1 border-0"
             style={{ minHeight: 'calc(100vh - 280px)' }}
             allow="geolocation"
           />
+
+          {/* Mobile: most MLS IDX search tools won't load inside a mobile
+              iframe (third-party cookies / session restrictions), so send
+              users to the live search in their own browser instead. */}
+          <div className="lg:hidden flex-1 flex flex-col items-center justify-center text-center gap-4 px-6 py-20">
+            <span className="section-label">{current.sublabel}</span>
+            <h2 className="font-display text-2xl text-navy-900">{current.label}</h2>
+            <p className="text-sm text-gray-500 max-w-xs">
+              View live listings for this region in your browser.
+            </p>
+            <a
+              href={current.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold"
+            >
+              Search Listings <ExternalLink size={14} />
+            </a>
+          </div>
         </motion.div>
       </div>
     </div>
