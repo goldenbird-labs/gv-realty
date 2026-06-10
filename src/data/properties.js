@@ -613,7 +613,7 @@ export const agents = [
     email: 'loans.gv@gmail.com',
     phone: '+1 (562) 857-8686',
     photo: '/victor.jpg',
-    bio: 'Victor is a dedicated realtor with G & V Options & Solutions Inc., serving buyers, sellers, and investors across California and Florida. With deep local market knowledge and a commitment to results, Victor guides clients through every stage of the real estate process with professionalism and care.',
+    bio: 'Victor Astudillo has been a trusted professional in the lending industry since 2005. Beginning his career as a direct lender, he quickly established his own branch, demonstrating a strong commitment to helping clients achieve their financial goals. To provide borrowers with greater flexibility and access to a wider range of financing solutions, Victor expanded into the mortgage and lending brokerage sector.\n\nToday, he is approved with more than 200 lending institutions and actively works with over 20 lenders to secure the most competitive financing options for his clients. His extensive industry knowledge, strong lender relationships, and client-focused approach allow him to offer a broad range of loan products, including residential mortgages, refinancing solutions, investment property financing, and specialized lending programs.\n\nWith over two decades of experience, Victor is dedicated to guiding clients through every step of the lending process, ensuring they receive personalized solutions tailored to their unique financial needs and objectives.',
     listingsSold: 180,
     volume: '2.1B',
   },

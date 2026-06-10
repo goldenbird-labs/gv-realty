@@ -102,7 +102,7 @@ export default function About() {
                 </div>
                 <h3 className="font-display text-2xl font-semibold text-navy-900 mb-1">{agent.name}</h3>
                 <p className="text-xs text-gold tracking-[0.15em] uppercase mb-4">{agent.title}</p>
-                <p className="text-sm text-gray-500 leading-relaxed mb-6">{agent.bio}</p>
+                <p className="text-sm text-gray-500 leading-relaxed mb-6 whitespace-pre-line">{agent.bio}</p>
                 <div className="border-t border-gray-100 pt-5 space-y-3">
                   <a href={`tel:${agent.phone}`} className="flex items-center justify-center gap-2 text-sm font-medium text-navy-900 hover:text-gold transition-colors">
                     <Phone size={13} /> {agent.phone}
