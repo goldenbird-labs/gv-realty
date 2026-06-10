@@ -608,7 +608,7 @@ export const agents = [
   },
   {
     id: '2',
-    name: 'Victor Guimaraes',
+    name: 'Victor Astudillo',
     title: 'Mortgage and Loan Originator',
     email: 'loans.gv@gmail.com',
     phone: '+1 (562) 857-8686',
@@ -653,7 +653,7 @@ export const blogPosts = [
     slug: 'ca-fl-market-report-2025',
     excerpt: 'Home sales across California and Florida shifted significantly in 2025. We break down the markets, the trends, and what it means for buyers and sellers at every price point.',
     coverImage: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&h=400&fit=crop&q=85',
-    author: 'Victor Guimaraes',
+    author: 'Victor Astudillo',
     publishedAt: '2025-03-15',
     category: 'Market Intelligence',
   },

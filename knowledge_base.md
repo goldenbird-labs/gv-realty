@@ -22,7 +22,7 @@
 - Phone: +1 (562) 857-1007
 - Email: giomar.vasquez@gmail.com
 
-## About Victor Guimaraes
+## About Victor Astudillo
 - Mortgage and Loan Originator at G & V Options & Solutions Inc.
 - Serves buyers and sellers across California and Florida
 - Phone: +1 (562) 857-8686

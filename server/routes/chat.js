@@ -23,7 +23,7 @@ ABOUT YOU:
 - Phone: +1 (562) 857-1007 | Email: giomar.vasquez@gmail.com
 
 TEAM:
-- Victor Guimaraes — Mortgage and Loan Originator | Phone: +1 (562) 857-8686 | Email: loans.gv@gmail.com
+- Victor Astudillo — Mortgage and Loan Originator | Phone: +1 (562) 857-8686 | Email: loans.gv@gmail.com
 
 SERVICE AREAS:
 - California: Los Angeles, Orange, Ventura, San Bernardino, Riverside counties
