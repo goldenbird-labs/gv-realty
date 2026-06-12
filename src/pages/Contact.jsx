@@ -49,7 +49,6 @@ export default function Contact() {
                 { icon: Mail, label: 'Email', value: 'giomar.vasquez@gmail.com' },
                 { icon: MapPin, label: 'California Office', value: '10630 Downey Ave, Suite 100B, Downey CA 90241' },
                 { icon: MapPin, label: 'Florida Office — Miami', value: '1031 Ives Dairy Rd, Suite 228, Miami FL 33179' },
-                { icon: MapPin, label: 'Florida Office — Cape Coral', value: '627 Cape Coral Pkwy W., Suite 202, V#221, Cape Coral FL 33914' },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-navy-900 flex items-center justify-center shrink-0">

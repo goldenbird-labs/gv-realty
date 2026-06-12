@@ -31,7 +31,6 @@
 ## Office Locations
 1. **California HQ:** 10630 Downey Ave, Suite 100B, Downey, CA 90241
 2. **Florida (Miami):** 1031 Ives Dairy Rd, Suite 228, Miami, FL 33179
-3. **Florida (Cape Coral):** 627 Cape Coral Pkwy W., Suite 202, V#221, Cape Coral, FL 33914
 
 ## Service Areas
 **California Counties:** Los Angeles, Orange, Ventura, San Bernardino, Riverside

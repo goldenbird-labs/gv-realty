@@ -74,11 +74,11 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-2">
                 <MapPin size={13} className="text-gold mt-0.5 shrink-0" />
-                <span>
-                  10630 Downey Ave #100B, Downey CA<br />
-                  1031 Ives Dairy Rd #228, Miami FL<br />
-                  627 Cape Coral Pkwy W., Ste 202, Cape Coral FL
-                </span>
+                <span>10630 Downey Ave #100B, Downey CA</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <MapPin size={13} className="text-gold mt-0.5 shrink-0" />
+                <span>1031 Ives Dairy Rd #228, Miami FL</span>
               </div>
             </div>
             <p className="text-white/20 text-[10px] mt-4 leading-relaxed">
