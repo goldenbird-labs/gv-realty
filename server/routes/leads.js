@@ -13,6 +13,15 @@ async function getLocation(ip) {
   } catch { return { country: '', city: '' } }
 }
 
+async function saveToGoogleSheet(lead) {
+  if (!process.env.GOOGLE_SHEETS_WEBHOOK_URL) return
+  try {
+    await axios.post(process.env.GOOGLE_SHEETS_WEBHOOK_URL, lead, { timeout: 5000 })
+  } catch (err) {
+    console.error('Google Sheets webhook failed:', err.message)
+  }
+}
+
 async function notify(lead) {
   if (!process.env.PUSHOVER_APP_TOKEN || !process.env.PUSHOVER_USER_KEY) return
   try {
@@ -42,7 +51,7 @@ router.post('/', async (req, res) => {
       if (error) throw error
     }
 
-    await notify(lead)
+    await Promise.all([saveToGoogleSheet(lead), notify(lead)])
     res.json({ success: true })
   } catch (err) {
     console.error('POST /leads:', err.message)
